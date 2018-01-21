@@ -1,10 +1,10 @@
 {
   "name": "cv",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o -sm true ",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
