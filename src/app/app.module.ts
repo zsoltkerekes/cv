@@ -13,11 +13,14 @@ import { StudyComponent } from './pages/study/study.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { VideoComponent } from './blocks/video/video.component';
 import { CountMeOnComponent } from './blocks/count-me-on/count-me-on.component';
-import { ExpreienceProgressComponent } from './blocks/expreience-progress/expreience-progress.component';
+import { ExperienceProgressComponent } from './blocks/experience-progress/experience-progress.component';
 import { AboutMeTextComponent } from './blocks/about-me-text/about-me-text.component';
 import { ReferenceListComponent } from './blocks/reference-list/reference-list.component';
 import { ReferenceItemComponent } from './blocks/reference-item/reference-item.component';
 import { StudyListComponent } from './blocks/study-list/study-list.component';
+import { ProfessionalExperienceListComponent } from './blocks/professional-experience-list/professional-experience-list.component';
+import { ProfessionalExperienceItemComponent } from './blocks/professional-experience-item/professional-experience-item.component';
+import { FooterComponent } from './blocks/footer/footer.component';
 
 
 @NgModule({
@@ -32,11 +35,14 @@ import { StudyListComponent } from './blocks/study-list/study-list.component';
     ContactsComponent,
     VideoComponent,
     CountMeOnComponent,
-    ExpreienceProgressComponent,
+    ExperienceProgressComponent,
     AboutMeTextComponent,
     ReferenceListComponent,
     ReferenceItemComponent,
-    StudyListComponent
+    StudyListComponent,
+    ProfessionalExperienceListComponent,
+    ProfessionalExperienceItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
