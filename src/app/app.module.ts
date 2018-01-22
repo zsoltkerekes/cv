@@ -21,6 +21,7 @@ import { StudyListComponent } from './blocks/study-list/study-list.component';
 import { ProfessionalExperienceListComponent } from './blocks/professional-experience-list/professional-experience-list.component';
 import { ProfessionalExperienceItemComponent } from './blocks/professional-experience-item/professional-experience-item.component';
 import { FooterComponent } from './blocks/footer/footer.component';
+import { ContactFormComponent } from './blocks/contact-form/contact-form.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { FooterComponent } from './blocks/footer/footer.component';
     StudyListComponent,
     ProfessionalExperienceListComponent,
     ProfessionalExperienceItemComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

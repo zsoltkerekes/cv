@@ -1,0 +1,38 @@
+@import './../../assets/css/colors';
+nav {
+    width: 20%;
+    font-size: 75%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $mainbgcolor;
+    color: $maincolor;
+    z-index: 5000;
+    ul {
+        width: 80%;
+        margin: 0 auto;
+        li {
+            padding: 0.75em 1em;
+            margin: 0.25em 0em;
+            text-transform: uppercase;
+            border-radius: 0.25em;
+            overflow: hidden;
+            &:hover {
+                background-color: rgba(50, 50, 50, 0.6);
+            }
+            &:last-child {
+                margin-top: 2em;
+            }
+        }
+        img {
+            margin: 5% 0%;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            height: auto;
+            border-radius: 5%;
+            border: 3px solid $maincolor;
+        }
+    }
+}
