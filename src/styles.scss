@@ -1,6 +1,5 @@
 @import './assets/css/reset.css';
 @import './assets/css/colors';
-
 //////////
 html {
     font-family: 'Open Sans', sans-serif;
@@ -17,4 +16,103 @@ h6 {
     text-transform: uppercase;
     font-family: 'Coda', cursive;
     text-align: right;
+}
+
+.fullpic {
+    width: 100%;
+    height: 8em;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+    text-align: center;
+    line-height: 125%;
+    padding: 2em 0em;
+    font-size: 110%;
+}
+
+.tocenter {
+    text-align: left;
+    width: 28em;
+    margin: 0 auto;
+}
+
+.referenciak {
+    text-align: center;
+}
+
+.referencia {
+    margin: 0.2em 0.1em;
+    padding: 0;
+    width: 19em;
+    height: 15em;
+    display: inline-block;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.referencia p {
+    background-color: rgba(50, 50, 50, 0.84);
+    font-weight: bold;
+    color: #eeeeee;
+    padding: 0;
+}
+
+.referencia p:nth-child(1) {
+    height: 3em;
+    line-height: 3em;
+    margin-top: 10.5em;
+    width: 100%;
+    border-top: 1px solid gray;
+    text-transform: uppercase;
+}
+
+.referencia p:nth-child(2) {
+    height: 8em;
+    vertical-align: middle;
+    border-top: 1px solid gray;
+    padding: 1em;
+}
+
+.referencia:hover>a p:nth-child(1) {
+    margin-top: 1.95em;
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.referencia p:nth-child(1):hover {
+    color: gray;
+}
+
+.szlogo {
+    width: 100%;
+    text-align: left;
+}
+
+.szlogo img {
+    width: auto;
+    height: 5em;
+    float: left;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.justify span {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.disz {
+    width: 50%;
+    float: left;
 }

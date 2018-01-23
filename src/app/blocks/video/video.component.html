@@ -1,15 +1,19 @@
 <div id="video">
 
-  <video autoplay loop muted>
-    <source type="video/mp4" src="/assets/video/adventure-is-calling.mp4">
+  <video autoplay loop [muted]="muted">
+    <source type="video/mp4" [src]="videoSrc[index]">
   </video>
 
-  <img src="/assets/images/soundoff.png" id="sound" class="transition" alt="Hang ki, illetve bekapcsolása" title="Hang ki, illetve bekapcsolása"
-  />
+  <img [src]="picSrc"
+   class="sound" alt="Hang ki, illetve bekapcsolása"
+    title="Hang ki, illetve bekapcsolása"
+   (click)="soundOnOff()" />
 
   <h2 itemprop="offers">
     <span itemprop="name">Kerekes Zsolt
     </span>
     <br/>
-    <br/> Ez az online szakmai önéletrajzom, amelyben részletezem referenciamunkáim, szakmai tapasztalataim, és tanulmányaim.</h2>
+    <br/> Ez az online szakmai önéletrajzom,
+     amelyben részletezem referenciamunkáim,
+     szakmai tapasztalataim, és tanulmányaim.</h2>
 </div>

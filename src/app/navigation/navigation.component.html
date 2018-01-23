@@ -6,24 +6,16 @@
         <img src="/assets/images/profile.jpg" alt="profile picture Kerekes Zsolt" title="Kerekes Zsolt" />
       </a>
 
-      <li>
-        <a [routerLink]="['/about-me']">About Me</a>
-      </li>
-      <li>
-        <a [routerLink]="['/reference']">Reference</a>
-      </li>
-      <li>
-        <a [routerLink]="['/professional-experience']">Professional Experience</a>
-      </li>
-      <li>
-        <a [routerLink]="['/study']">Study</a>
-      </li>
-      <li>
-        <a [routerLink]="['/contacts']">contacts</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/kerekes-zsolt/" target="_blank">LinkedIn</a>
-      </li>
+      <a *ngFor="let link of links" [routerLink]="link.routerLink">
+        <li>{{link.anchorText}}</li>
+      </a>
+
+      <a href="https://www.linkedin.com/in/kerekes-zsolt/" target="_blank">
+        <li>
+          LinkedIn Profile
+        </li>
+      </a>
+
     </ul>
   </nav>
 </header>

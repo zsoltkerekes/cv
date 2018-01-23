@@ -1,11 +1,7 @@
 @import './../../assets/css/colors';
 nav {
-    width: 20%;
-    font-size: 75%;
+    width: 100%;
     height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: $mainbgcolor;
     color: $maincolor;
     z-index: 5000;
@@ -20,9 +16,6 @@ nav {
             overflow: hidden;
             &:hover {
                 background-color: rgba(50, 50, 50, 0.6);
-            }
-            &:last-child {
-                margin-top: 2em;
             }
         }
         img {
