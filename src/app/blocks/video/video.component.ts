@@ -20,7 +20,7 @@ export class VideoComponent implements OnInit {
     this.videoSrc = [
       '/assets/video/adventure-is-calling.mp4',
       '/assets/video/if-i-could.mp4',
-      '/assets/video/szeged-2012.mp4'
+      '/assets/video/a-gift-from-rome.mp4'
     ];
     this.index = Math.floor((Math.random() * this.videoSrc.length));
   }

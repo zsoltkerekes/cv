@@ -5,11 +5,47 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './reference-list.component.html',
   styleUrls: ['./reference-list.component.scss']
 })
+
 export class ReferenceListComponent implements OnInit {
+
+  search: string;
+  references: { image: string, link: string, name: string, priority: number }[];
 
   constructor() { }
 
   ngOnInit() {
+    this.search = '';
+    this.references = [
+      { image: '/assets/images/1.jpg', link: 'http://aqualift.hu', name: 'AQUALIFT.HU', priority: 10 },
+      { image: '/assets/images/2.jpg', link: 'http://sybacontroll.hu', name: 'sybacontroll.hu', priority: 220 },
+      { image: '/assets/images/3.jpg', link: 'http://k-fal.hu', name: 'k-fal.hu', priority: 30 },
+      { image: '/assets/images/4.jpg', link: 'http://adamliptak-composer.com', name: 'adamliptak-composer.com', priority: 40 },
+      { image: '/assets/images/5.jpg', link: 'http://forrasakku.hu', name: 'forrasakku.HU', priority: 50 },
+      { image: '/assets/images/6.jpg', link: 'http://youngkft.hu', name: 'youngkft.HU', priority: 60 },
+      { image: '/assets/images/7.jpg', link: 'http://kuriozumpizzeria.com', name: 'kuriozumpizzeria.com', priority: 70 },
+      { image: '/assets/images/8.jpg', link: 'http://5dultrahangszeged.hu', name: '5dultrahangszeged.HU', priority: 80 },
+      { image: '/assets/images/11.jpg', link: 'http://agroazis.hu', name: 'agroazis.HU', priority: 90 },
+      { image: '/assets/images/12.jpg', link: 'http://mmggroup.hu', name: 'mmggroup.hu', priority: 100 },
+      { image: '/assets/images/13.jpg', link: 'http://gaborabraham-mosaicart.com', name: 'gaborabraham-mosaicart.com', priority: 110 },
+      { image: '/assets/images/14.jpg', link: 'http://kalvados.hu', name: 'kalvados.hu', priority: 120 },
+      { image: '/assets/images/15.jpg', link: 'http://megalloetterem.com', name: 'megalloetterem.com', priority: 130 },
+      { image: '/assets/images/16.jpg', link: 'http://megszervez.hu', name: 'megszervez.hu', priority: 140 },
+      { image: '/assets/images/17.jpg', link: 'http://sudalu.hu', name: 'sudalu.hu', priority: 150 },
+      { image: '/assets/images/18.jpg', link: 'http://sudbau.hu', name: 'sudbau.hu', priority: 160 },
+      { image: '/assets/images/19.jpg', link: 'http://sybacontroll.hu', name: 'sybacontroll.hu', priority: 170 },
+      { image: '/assets/images/20.jpg', link: 'http://szegedilmbt.hu', name: 'szegedilmbt.hu', priority: 180 },
+      { image: '/assets/images/23.jpg', link: 'http://maximabeauty.hu', name: 'http://maximabeauty', priority: 190 },
+      { image: '/assets/images/27.jpg', link: 'http://pmtgep.hu', name: 'pmtgep.hu', priority: 220 },
+      { image: '/assets/images/28.jpg', link: 'http://szegedetterem.hu', name: 'szegedetterem.hu', priority: 20 }
+    ];
+
+    this.references.sort(this.byPriority);
+  }
+
+  byPriority(a, b) {
+    if (a.priority < b.priority) { return -1; }
+    if (a.priority > b.priority) { return 1; }
+    return 0;
   }
 
 }

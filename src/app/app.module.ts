@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -17,12 +17,11 @@ import { CountMeOnComponent } from './blocks/count-me-on/count-me-on.component';
 import { ExperienceProgressComponent } from './blocks/experience-progress/experience-progress.component';
 import { AboutMeTextComponent } from './blocks/about-me-text/about-me-text.component';
 import { ReferenceListComponent } from './blocks/reference-list/reference-list.component';
-import { ReferenceItemComponent } from './blocks/reference-item/reference-item.component';
 import { StudyListComponent } from './blocks/study-list/study-list.component';
 import { ProfessionalExperienceListComponent } from './blocks/professional-experience-list/professional-experience-list.component';
-import { ProfessionalExperienceItemComponent } from './blocks/professional-experience-item/professional-experience-item.component';
 import { FooterComponent } from './blocks/footer/footer.component';
 import { ContactFormComponent } from './blocks/contact-form/contact-form.component';
+import { FilterPipe } from './shared/pipes/filter.pipe';
 
 
 @NgModule({
@@ -40,19 +39,16 @@ import { ContactFormComponent } from './blocks/contact-form/contact-form.compone
     ExperienceProgressComponent,
     AboutMeTextComponent,
     ReferenceListComponent,
-    ReferenceItemComponent,
     StudyListComponent,
     ProfessionalExperienceListComponent,
-    ProfessionalExperienceItemComponent,
     FooterComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]

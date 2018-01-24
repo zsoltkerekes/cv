@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceProgressComponent implements OnInit {
 
+  search: string;
   programmingSkills: { name: string, progress: number }[];
-  etcSkills: { name: string, progress: number }[];
 
   constructor() { }
 
   ngOnInit() {
-
+    this.search = '';
     this.programmingSkills = [
       { name: 'HTML', progress: 95 },
       { name: 'HTML5', progress: 90 },
@@ -22,12 +22,7 @@ export class ExperienceProgressComponent implements OnInit {
       { name: 'Javascript', progress: 65 },
       { name: 'JQuery', progress: 50 },
       { name: 'PHP', progress: 25 },
-      { name: 'SQL', progress: 10 }
-    ];
-
-    this.programmingSkills.sort(this.byProgress);
-
-    this.etcSkills = [
+      { name: 'SQL', progress: 10 },
       { name: 'Desktop dizájn kivitelezés', progress: 85 },
       { name: 'Reszpozív/folyékony dizájn kivitelezés', progress: 85 },
       { name: 'Angol nyelv ', progress: 70 },
@@ -36,7 +31,8 @@ export class ExperienceProgressComponent implements OnInit {
       { name: 'Photoshop', progress: 10 }
     ];
 
-    this.etcSkills.sort(this.byProgress);
+    this.programmingSkills.sort(this.byProgress);
+
   }
 
   byProgress(a, b) {
