@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'cv-study',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudyComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private title: Title,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    this.title.setTitle(this.activatedRoute.snapshot.data['pageTitle']);
   }
-
 }

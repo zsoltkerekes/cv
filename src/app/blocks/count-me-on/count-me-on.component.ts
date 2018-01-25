@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataStorageService } from '../../shared/services/data-storage.service';
 
 @Component({
   selector: 'cv-count-me-on',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountMeOnComponent implements OnInit {
 
-  constructor() { }
+  countMeOn: string[];
+
+  constructor(private dataStorageService: DataStorageService) { }
 
   ngOnInit() {
+    this.countMeOn = this.dataStorageService.coutMeOn();
   }
 
 }

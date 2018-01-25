@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataStorageService } from '../../shared/services/data-storage.service';
 
 @Component({
   selector: 'cv-video',
@@ -12,16 +13,12 @@ export class VideoComponent implements OnInit {
   videoSrc: string[];
   index: number;
 
-  constructor() { }
+  constructor(private dataStorageService: DataStorageService) { }
 
   ngOnInit() {
     this.muted = true;
     this.picSrc = '/assets/images/soundoff.png';
-    this.videoSrc = [
-      '/assets/video/adventure-is-calling.mp4',
-      '/assets/video/if-i-could.mp4',
-      '/assets/video/a-gift-from-rome.mp4'
-    ];
+    this.videoSrc = this.dataStorageService.videoSrc();
     this.index = Math.floor((Math.random() * this.videoSrc.length));
   }
 

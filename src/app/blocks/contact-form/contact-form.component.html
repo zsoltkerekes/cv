@@ -1,3 +1,39 @@
-<p>
-  contact-form works!
-</p>
+<section class="from" *ngIf="!formSubmitted;else submitted">
+
+  <h2> Contact me via filling the form </h2>
+  <br>
+  <br>
+
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+    <div>
+      <label for="name">Your Name</label>
+      <input type="text" name="name" [(ngModel)]="name" required>
+    </div>
+
+    <div>
+      <label for="name">Your Email adress</label>
+      <input type="text" name="email" [(ngModel)]="email" required email
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
+    </div>
+
+    <div>
+      <label for="message">Your Message</label>
+      <textarea name="message" [(ngModel)]="message" required></textarea>
+    </div>
+
+    <div>
+      <input type="submit" value="Send" [disabled]="form.invalid">
+    </div>
+
+  </form>
+
+</section>
+
+<ng-template #submitted>
+  <br>
+  <br>
+  <h2>Form Submitted. Thank You!</h2>
+  <br>
+  <br>
+</ng-template>

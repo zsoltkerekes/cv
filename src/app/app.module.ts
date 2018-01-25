@@ -22,6 +22,7 @@ import { ProfessionalExperienceListComponent } from './blocks/professional-exper
 import { FooterComponent } from './blocks/footer/footer.component';
 import { ContactFormComponent } from './blocks/contact-form/contact-form.component';
 import { FilterPipe } from './shared/pipes/filter.pipe';
+import { DataStorageService } from './shared/services/data-storage.service';
 
 
 @NgModule({
@@ -50,7 +51,9 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    DataStorageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

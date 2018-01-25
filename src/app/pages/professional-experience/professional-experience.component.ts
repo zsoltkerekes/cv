@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'cv-professional-experience',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfessionalExperienceComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private title: Title,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    this.title.setTitle(this.activatedRoute.snapshot.data['pageTitle']);
   }
-
 }

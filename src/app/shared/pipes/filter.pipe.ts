@@ -9,11 +9,9 @@ export class FilterPipe implements PipeTransform {
     if (search.length === 0) {
       return value;
     } else {
-      const temp = value.filter(
-        (row) => (row.name.toUpperCase().indexOf(search.toUpperCase()) !== -1) ? true : false
+      return value.filter(
+        row => row.name.toUpperCase().indexOf(search.toUpperCase()) !== -1 ? true : false
       );
-      return temp;
     }
   }
-
 }

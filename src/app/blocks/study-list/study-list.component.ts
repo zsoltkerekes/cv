@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataStorageService } from '../../shared/services/data-storage.service';
 
 @Component({
   selector: 'cv-study-list',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudyListComponent implements OnInit {
 
-  constructor() { }
+  studies: {
+    title: string,
+    subTitle: string,
+    description: string
+  }[];
+
+  constructor(private dataStorageService: DataStorageService) { }
 
   ngOnInit() {
+    this.studies = this.dataStorageService.studies();
   }
 
 }

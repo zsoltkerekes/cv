@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataStorageService } from '../../shared/services/data-storage.service';
 
 @Component({
   selector: 'cv-about-me-text',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeTextComponent implements OnInit {
 
-  constructor() { }
+  aboutMe: string[];
+
+  constructor(private dataStorageService: DataStorageService) { }
 
   ngOnInit() {
+    this.aboutMe = this.dataStorageService.aboutMe();
   }
 
 }
