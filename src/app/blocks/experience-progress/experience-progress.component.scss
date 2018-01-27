@@ -1,17 +1,20 @@
-p.tocenter {
-    padding: 0.5em;
-    progress {
-        float: right;
-    }
+.bar {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1em;
 }
 
-input {
-    padding: 0.3em 5%;
-    text-align: right;
-    margin: 0em 0em 1em 0em;
-    float: right;
-    &:focus,
-    &:hover {
-        outline: none;
+.label {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 0.3em;
+}
+
+.full-width {
+    width: 80%;
+    margin-left: 10%;
+    padding: inherit 2.5%;
+    input {
+        text-align: right;
     }
 }

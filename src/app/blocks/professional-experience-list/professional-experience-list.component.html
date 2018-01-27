@@ -1,20 +1,29 @@
-<label for="search"></label>
-<input type="search" name="search" id="search" [(ngModel)]="search" placeholder="search">
+<mat-card class="mat-elevation-z3">
+  <mat-card-content>
+      <mat-form-field class="full-width">
+          <input matInput placeholder="Type here something to start the search"
+           maxlength="25" type="search" name="search" id="search"
+            [(ngModel)]="search">
+          <mat-hint align="end">{{search.length}} / 25</mat-hint>
+        </mat-form-field>
+  </mat-card-content>
+</mat-card>
 
-<br><br><br>
+<mat-card class="mat-elevation-z3"  *ngFor="let professionalExperience of professionalExperiences | filter:search">
+    <mat-card-content>
+        <div class="szlogo">
+            <img [src]="professionalExperience.image" />
+            <h2>{{professionalExperience.name}}</h2>
+            <h3>{{professionalExperience.date}}</h3>
+          </div>
+          <p>
+            <b>Main tasks and responsibilities:</b>
+          </p>
+          <p class="justify">
+            {{professionalExperience.description}}
+          </p>
+          <hr class="disz">
 
-<div *ngFor="let professionalExperience of professionalExperiences | filter:search">
-  <div class="szlogo">
-    <img [src]="professionalExperience.image" />
-    <h2>{{professionalExperience.name}}</h2>
-    <h3>{{professionalExperience.date}}</h3>
-  </div>
-  <p>
-    <b>Main tasks and responsibilities:</b>
-  </p>
-  <p class="justify">
-    {{professionalExperience.description}}
-  </p>
-  <hr class="disz">
-  <br><br><br>
-</div>
+    </mat-card-content>
+  </mat-card>
+

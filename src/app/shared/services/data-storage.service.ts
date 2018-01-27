@@ -118,8 +118,7 @@ export class DataStorageService {
       `I have been working with customers since 2006. I spent 10 years in the role of
       call center operator, solving various kind of problems on a daily basis. But what
       I wanted to do, is my original profession, which is programming.`,
-      ` In the summer of
-       2016 there was an opportunity to start to work as a front-end developer. Since
+      ` In the summer of 2016 there was an opportunity to start to work as a front-end developer. Since
        then I have been coding, my goal is to be a full web developer in time.`
     ];
   }

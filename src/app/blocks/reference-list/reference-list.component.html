@@ -1,11 +1,19 @@
-<label for="search"></label>
-<input type="search" name="search" id="search" [(ngModel)]="search" placeholder="search">
-<section class="referenciak">
-  <div class="referencia" *ngFor="let reference of references | filter:search" [ngStyle]="{'background-image' : 'url(' + reference.image +')'} ">
+<mat-card class="mat-elevation-z3">
+  <mat-card-content>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Type here something to start the search" maxlength="25" type="search" name="search" id="search"
+        [(ngModel)]="search">
+      <mat-hint align="end">{{search.length}} / 25</mat-hint>
+    </mat-form-field>
 
-    <a [href]="reference.link" target="_blank">
-      <p>{{reference.name | uppercase}}</p>
-    </a>
-
-  </div>
-</section>
+    <div class="center">
+      <mat-card class="referencia mat-elevation-z3" *ngFor="let reference of references | filter:search" [ngStyle]="{'background-image' : 'url(' + reference.image +')'}">
+        <mat-card-content>
+          <a [href]="reference.link" target="_blank">
+            <p class="referenciatext">{{reference.name | uppercase}}</p>
+          </a>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-card-content>
+</mat-card>
