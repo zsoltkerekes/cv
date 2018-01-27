@@ -5,27 +5,34 @@ nav {
     background-color: $mainbgcolor;
     color: $maincolor;
     z-index: 5000;
-    ul {
-        width: 80%;
-        margin: 0 auto;
-        li {
-            padding: 0.75em 1em;
-            margin: 0.25em 0em;
-            text-transform: uppercase;
-            border-radius: 0.25em;
-            overflow: hidden;
-            &:hover {
-                background-color: rgba(50, 50, 50, 0.6);
-            }
-        }
-        img {
-            margin: 5% 0%;
-            width: 100%;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            height: auto;
-            border-radius: 5%;
-            border: 3px solid $maincolor;
-        }
-    }
+}
+
+.img {
+    margin: 5% 0%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 5%;
+    border: 3px solid $maincolor;
+}
+
+.colorful {
+    background-color: $mainbgcolor;
+    color: $maincolor;
+    transition: all ease-in-out .3s;
+    margin-bottom:0.2em;
+    margin-top:0.2em;
+}
+
+.title {
+    font-size: 145%;
+    font-family: Coda;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.active {
+  font-weight: bold;
 }

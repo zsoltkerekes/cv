@@ -1,18 +1,19 @@
-<div id="video">
+<mat-card id="video">
+  <mat-card-content >
 
-  <video autoplay loop [muted]="muted">
-    <source type="video/mp4" [src]="videoSrc[index]">
-  </video>
+    <video autoplay loop [muted]="muted">
+      <source type="video/mp4" [src]="videoSrc[index]">
+    </video>
 
-  <img [src]="picSrc" class="sound" alt="Sound Off" title="Sound On" (click)="soundOnOff()" />
+    <img [src]="picSrc" class="sound" alt="Sound Off" title="Sound On" (click)="soundOnOff()" />
 
-  <h1 itemprop="offers">
-    <span itemprop="name">Zsolt Kerekes</span>
-    <br/>
-    <br/>This is my online curriculum vitae
-    <br/>
-    <br/> in which I describe my references, my professional experience, and my studies.
-  </h1>
-</div>
+    <h1 itemprop="offers">
+      <br/>
+      <br/>This is my online curriculum vitae
+      <br/> in which I describe my references, my professional experience, and my studies.
+    </h1>
+
+  </mat-card-content>
+</mat-card>
 <br/>
 <br/>

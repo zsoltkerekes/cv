@@ -1,21 +1,23 @@
-<header>
+<header class="mat-elevation-z8">
   <nav>
-    <ul>
 
-      <a [routerLink]="['/about-me']">
-        <img src="/assets/images/profile.jpg" alt="profile picture Kerekes Zsolt" title="Kerekes Zsolt" />
+    <a [routerLink]="['/about-me']">
+      <mat-card class="colorful">
+        <mat-card-header>
+          <mat-card-title class="title">Zsolt Kerekes</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <img class="img" src="/assets/images/profile.jpg" alt="profile picture Zsolt Kerekes" title="Zsolt Kerekes" />
+        </mat-card-content>
+      </mat-card>
+    </a>
+
+    <mat-nav-list>
+      <a class="colorful mat-elevation-z1" mat-list-item *ngFor="let link of links" [routerLink]="link.routerLink" routerLinkActive="active">
+        {{link.anchorText}}
       </a>
+      <a class="colorful mat-elevation-z1" mat-list-item href="https://www.linkedin.com/in/kerekes-zsolt/" target="_blank">LinkedIn Profile</a>
+    </mat-nav-list>
 
-      <a *ngFor="let link of links" [routerLink]="link.routerLink">
-        <li>{{link.anchorText}}</li>
-      </a>
-
-      <a href="https://www.linkedin.com/in/kerekes-zsolt/" target="_blank">
-        <li>
-          LinkedIn Profile
-        </li>
-      </a>
-
-    </ul>
   </nav>
 </header>
