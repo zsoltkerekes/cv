@@ -20,7 +20,6 @@ export class ProfessionalExperienceListComponent implements OnInit {
     this.search = '';
     this.professionalExperiences = this.dataStorageService.professionalExperiences();
 
-
   }
 
 }

@@ -1,23 +1,25 @@
-<h3>Ismert programozási nyelvek</h3>
+<h3>Programming Skills</h3>
 
 <hr class="disz">
 
-<p class="justify">Lenti programozási nyelveket jelenlegi munkahelyemen alkalmazom, és folyamatos tanulással fejlesztem tudásom. Egyedül és
-  csapatban is dolgozom, nem okoz problémát ha más által írt forráskodót kell bővítenem. Rendezett áttekinthető módon írom
-  meg a forrráskódot, hogy később más is tudjon vele dolgozni. Minden esetben igyekszem pozitív attitűddel rendelkező, terhelhető,
-  hatékony és megbízható csapattag lenni.
+<p class="justify">
+  I use these programming skills in my current workplace, working in a team (I consider myself a team player). I'm writing in
+  a clean code style, so others can work my code later. In each case, I try to have a positive attitude, to be an efficient
+  and reliable team member.
 </p>
 
 <label for="search"></label>
 <input type="search" name="search" id="search" [(ngModel)]="search" placeholder="search">
 
-<br><br><br>
+<br>
+<br>
+<br>
 
 <p class="tocenter" *ngFor="let skill of programmingSkills | filter:search">
   {{skill.name}}
   <progress [value]="skill.progress" max="100"></progress>
 </p>
 
-<p>Ismereteimet folyamatosan igyekszem fejleszteni.</p>
+<p>I am constantly trying to develop my knowledge.</p>
 
 <div class="fullpic" style="background-image: url(/assets/images/programming.jpg)"></div>

@@ -9,17 +9,31 @@
     <div>
       <label for="name">Your Name</label>
       <input type="text" name="name" [(ngModel)]="name" required>
+      <span *ngIf="form.touched && (name == '' || name== undefined) ">Name field is required to fill
+        <br>
+        <br>
+        <br>
+      </span>
     </div>
 
     <div>
-      <label for="name">Your Email adress</label>
-      <input type="text" name="email" [(ngModel)]="email" required email
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
+      <label for="name">Your Email address</label>
+      <input type="text" name="email" [(ngModel)]="email" required email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+      <span *ngIf="form.touched && (email == '' || email== undefined) ">Email field is required to fill
+        <br>
+        <br>
+        <br>
+      </span>
     </div>
 
     <div>
       <label for="message">Your Message</label>
       <textarea name="message" [(ngModel)]="message" required></textarea>
+      <span *ngIf="form.touched && (message == '' || message== undefined) ">Message field is required to fill
+        <br>
+        <br>
+        <br>
+      </span>
     </div>
 
     <div>

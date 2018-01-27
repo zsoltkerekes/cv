@@ -1,11 +1,16 @@
 {
   "cSpell.words": [
     "AQUALIFT",
+    "Kerekes",
+    "Zsolt",
     "adamliptak",
     "agroazis",
+    "disz",
     "dultrahangszeged",
     "forrasakku",
+    "fullpic",
     "gaborabraham",
+    "itemprop",
     "kalvados",
     "kuriozumpizzeria",
     "megalloetterem",
@@ -21,6 +26,11 @@
     "szeged",
     "szegedetterem",
     "szegedilmbt",
+    "szlogo",
+    "tocenter",
     "youngkft"
+  ],
+  "cSpell.enabledLanguageIds": [
+    "html"
   ]
 }

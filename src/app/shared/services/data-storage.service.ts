@@ -11,16 +11,37 @@ export class DataStorageService {
       { name: 'HTML5', progress: 90 },
       { name: 'CSS', progress: 90 },
       { name: 'CSS3', progress: 85 },
-      { name: 'Javascript', progress: 65 },
+      { name: 'Javascript', progress: 75 },
       { name: 'JQuery', progress: 50 },
       { name: 'PHP', progress: 25 },
       { name: 'SQL', progress: 10 },
-      { name: 'Desktop dizájn kivitelezés', progress: 85 },
-      { name: 'Reszpozív/folyékony dizájn kivitelezés', progress: 85 },
-      { name: 'Angol nyelv ', progress: 70 },
-      { name: 'Szakmai angol', progress: 65 },
+      { name: 'Static site building', progress: 85 },
+      { name: 'English language', progress: 70 },
       { name: 'Wordpress', progress: 25 },
-      { name: 'Photoshop', progress: 10 }
+      { name: 'Photoshop', progress: 10 },
+      { name: 'Yii', progress: 10 },
+      { name: 'Google Analytics', progress: 30 },
+      { name: 'Git', progress: 40 },
+      { name: 'GitHub', progress: 40 },
+      { name: 'TortoiseSVN', progress: 35 },
+      { name: 'AJAX', progress: 60 },
+      { name: 'AngularJS', progress: 70 },
+      { name: 'Bootstrap', progress: 50 },
+      { name: 'Jasmine', progress: 50 },
+      { name: 'Jest ', progress: 50 },
+      { name: 'Redux', progress: 70 },
+      { name: 'Webpack ', progress: 70 },
+      { name: 'ramda.js', progress: 45 },
+      { name: 'Clean Code', progress: 70 },
+      { name: 'Functional testing', progress: 80 },
+      { name: 'Karma', progress: 50 },
+      { name: 'Crossbrowser Coding', progress: 75 },
+      { name: 'Responsive Site Building', progress: 80 },
+      { name: 'GruntJs', progress: 40 },
+      { name: 'NPM', progress: 80 },
+      { name: 'Visual Studio Code', progress: 80 },
+      { name: 'Less CSS', progress: 75 },
+      { name: 'Sass', progress: 75 }
     ];
   }
 
@@ -28,48 +49,39 @@ export class DataStorageService {
     return [
       {
         image: '/assets/images/litologo.png',
-        name: 'Web fejlesztő - Litofilm Kft.',
-        date: '2015 - Jelenleg is',
-        description: `Megrendelő kérései alapján a grafikus megbízása webdizájn
-         elkészítésére, majd ez alapján a teljes weboldal kliens és szükség
-        esetén szerver oldalon történő lefejlesztése(bizonyos bonyolultsági
-          szintig), az elkészített weboldal élesítése, karbantartása,
-        módostása, később további fejlesztések elvégzése igény szerint, teljes
-        életciklus végigkövetése.Továbbbá hírlevél és landing oldal programozása,
-         online marketing tevékenység, kampányok, hirdetések lebobonyolítása,
-         illetve követő és remarketing
-        kódok illesztése.`
+        name: 'Web Developer - Litofilm',
+        date: '2015 - 2017',
+        description: `From scratch I developed web sites for over two years, mostly
+        clint side. We had a web designer who made the design by the wishes of the
+        client, but I was the person, who hold together each project, contact the
+                client, manage the work process, write the code (mostly client side),
+        find a freelancer to write the back-end part of the code (if necessary),
+        performed manual functional testing,  then finalize the deal with the client,
+         when the product was ready.`
       },
       {
         image: '/assets/images/telekom.png',
-        name: 'Általános Call Center Képviselő - Magyar Telekom Nyrt.',
+        name: 'Customer service representative - Magyar Telekom',
         date: '2012 - 2015',
-        description: `A beérkező hívások során az ügyfelek szakszerű és
-        udvarias kiszolgálása, a cég szolgáltatásainak és termékeinek
-        értékesítése, a problémák felelősségteljes megoldása,
-        az esetek nyomon követése, adminisztráció elvégzése.`
+        description: `Supporing company sales and/or customer services efforts by
+        solving clints promlems, help to get answers, and  manage conflits. Later I
+        involved in working with the receivables management team.`
       },
       {
         image: '/assets/images/lombard.png',
-        name: `Kintlévőségkezelési Ügyfélszolgálati Főmunkatárs,
-         később Telefonos Ügyfélszolgálati Munkatárs - Lombard Lízing Zrt.`,
+        name: `Customer service representative - Lombard Lízing`,
         date: '2010 - 2012 ',
-        description: ` Vállalati és egyéni vállalkozó(nagyobb értékű ezközökkel
-        rendelkező)  ügyfelekkel való kapcsolattartás, szükség esetén figyelemfelhívás
-        a hátralék rendezésére, később a beérkező hívások fogadása, saját hatáskörben
-        az ügyfelek problémáinak megoldásáról való gondoskodás, vagy annak a megfelelő
-        ügyintézési  szintre történő  továbbítása, adminisztráció elvégzése.Később a
-        beérkező hívások során az ügyfelek szakszerű és  udvarias kiszolgálása, a cég
-        szolgáltatásainak és termékeinek értékesítése, a problémák felelősségteljes
-        megoldása, az esetek nyomon követése, adminisztráció elvégzése.`
+        description: `Supporing company sales and/or customer services efforts by taking cafe
+         of the clients problems, help them with their issues with the contrats,
+          give information when the cliets needed.`
       },
       {
         image: '/assets/images/otp.png',
-        name: 'Kintlévőség kezelő Ügyfélreferens - OTP Bank Nyrt.',
+        name: 'Customer service representative - OTP Bank',
         date: '2009 - 2010',
-        description: `Hátralékos hitelszámlával rendelkező ügyfelek telefonos tájékoztatása,
-         és figyelem felhívása a hátralék rendezésére, tájékoztatása a banki eszközökről,
-         azok igénybevételeinek feltételeiről,adminisztráció elvégzése.`
+        description: `Supporing company sales and/or customer services efforts by dealing
+        with a breach of contract, accepting a payment agreement with non-paying customers,
+        initiating a recovery if necessary.`
       }
 
     ];
@@ -103,48 +115,51 @@ export class DataStorageService {
 
   aboutMe() {
     return [
-      `Kommunikatív, társaságkedvelő, érdeklődő személyként az élet napos oldalát keresem.
-       Munkavégzésem során arra törekszem, hogy a rám bízott feladatokat a lehető
-       legjobban végezzem el, és megszerezzem a szükséges tudást ennek érdekében.
-       Csapatban könnyen megtalálom a közös hangot munkatársaimmal.`,
-      ` Fontos tényező, hogy emberközpontú és konstruktív szellemiségben dolgozzak,
-       mert kamatoztatni és fejleszteni szeretném az
-      eddig megszerzett tapasztalataimat, és értékeimmel én is hozzá szeretnék
-      járulni az eredmények eléréséhez.`
+      `I have been working with customers since 2006. I spent 10 years in the role of
+      call center operator, solving various kind of problems on a daily basis. But what
+      I wanted to do, is my original profession, which is programming.`,
+      ` In the summer of
+       2016 there was an opportunity to start to work as a front-end developer. Since
+       then I have been coding, my goal is to be a full web developer in time.`
     ];
   }
 
   coutMeOn() {
     return [
-      `<span>Amiben számíthatsz rám</span>: Weboldal kliens oldalon egyedi dizájn alapján
-      történő fejlesztése a kért kliens oldali funciókkal, figyelembe véve az aktuális
-      UI és UX elvárásokat. Szükség esetén szerver oldalon is végzek (alacsony bonyolultsági
-         szintig) munkafolyamatokat. Az elkészítést követően a weboldal teljes életciklusát
-         végigkövetem az élesítéstől kezdve a karbantartáson,
-      a további fejlesztések elvégzésén keresztül a weboldal későbbi esetleges cseréjéig.`,
-      `<span>Amiben sajnos NEM számíthatsz rám</span>: MVC rendszerek, JAVA nyelv. Ha ezek
-       bármelyikére van szükséged, sajnos nem én vagyok az embered - legalábbis egyenlőre.
-       Nyitott vagyok a fejlődésre, szívesen megtanulnám az MVC rendszerek használatát,
-      vagy a JAVA nyelvet.`
+      `<span>What you can expect from me</span>:
+       Website deevelopment based on client's custom design, with the requested client-side
+       functions, considering the current UI and UX expectations. If needed, I also write
+       scripts on server side (to a low complexity level). After completing the tasks,
+       I manage the entire life cycle of the website from deploying to maintenance,
+       through further improvements, finally to the later exchange of the website.`,
+      `<span> Unfortunately, you can not count on me with</span>: Server side MVC systems,
+       and JAVA language. If that you need, unfortunately I cannot help you - at least yet.
+       I am open to new technologies, I would like to learn how to use MVC systems,
+       or JAVA language. `
     ];
   }
 
   studies() {
     return [
       {
-        title: 'Nyelvismeret',
-        subTitle: 'Angol, Angol szakmai: középfokú',
-        description: ` Angol nyelvű leírásokat, tutorial-ok és dokumentumokat gyakran
-         olvasok, ezzel is bővítve szakmai tapasztalataimat. Szeretem
-        nyomon követni az új trendeket, és megfelelni a kor elvásárainak.`
+        title: 'Language',
+        subTitle: 'English, English professional: intermediate',
+        description: `I often read English descriptions, tutorials and documents,
+        by doing so, I have expanded my professional knowledge in order to follow new trends
+        and to meet the expectations of the age.`
       },
       {
-        title: 'Végzettség',
-        subTitle: 'Kőrösy József Külkereskedelmi és Közgazdasági Szakközépiskola ',
-        description: `Érettségi (2001), Számítástechnikai programozó szak, amelyet
-        egyetemi tanulmányokkal folytattam, programozó matematikus
-        szakon, de nem fejeztem be tanulmányaim, diplomát nem szereztem.`
-      }
+        title: 'High School',
+        subTitle: 'József Kőrösy Foreign Trade and Economic Secondary School',
+        description: `Computer Programming Degree`
+      },
+      {
+        title: 'University',
+        subTitle: 'University of Szeged',
+        description: `Computer Programming Degree, I studied Programmer Mathematics
+         but I did not graduate.`
+      },
+
     ];
   }
 
