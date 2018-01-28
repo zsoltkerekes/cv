@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   imports: [
@@ -15,20 +16,16 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatCardModule,
     MatListModule,
     MatInputModule,
-    MatProgressBarModule
-  ],
-  declarations: [
-
+    MatProgressBarModule,
+    MatButtonModule
   ],
   exports: [
     BrowserAnimationsModule,
     MatCardModule,
     MatListModule,
     MatInputModule,
-    MatProgressBarModule
-  ],
-  providers: [
-
+    MatProgressBarModule,
+    MatButtonModule
   ]
 })
 export class MaterialModule { }

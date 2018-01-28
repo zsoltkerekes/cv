@@ -48,38 +48,47 @@ export class DataStorageService {
   professionalExperiences() {
     return [
       {
+        image: '/assets/images/epam.png',
+        name: 'Junior Software Developer - Epam Systems',
+        date: 'Since 2017',
+        description: `Learning and using new programming patterns and techniques,
+        new technologies, and programming client side MVC single page applications,
+        working with Git. Also daily use of the core technologies, like JavaScript,
+        Css and HTML.`
+      },
+      {
         image: '/assets/images/litologo.png',
         name: 'Web Developer - Litofilm',
         date: '2015 - 2017',
         description: `From scratch I developed web sites for over two years, mostly
         clint side. We had a web designer who made the design by the wishes of the
-        client, but I was the person, who hold together each project, contact the
-                client, manage the work process, write the code (mostly client side),
+        thclient, but I was the person, who hold together each project, contact the
+        client, manage the work process, write the code (mostly client side),
         find a freelancer to write the back-end part of the code (if necessary),
-        performed manual functional testing,  then finalize the deal with the client,
-         when the product was ready.`
+        performed manual functional testing then finalize the deal with the client,
+        when the product was ready.`
       },
       {
         image: '/assets/images/telekom.png',
         name: 'Customer service representative - Magyar Telekom',
         date: '2012 - 2015',
-        description: `Supporing company sales and/or customer services efforts by
-        solving clints promlems, help to get answers, and  manage conflits. Later I
+        description: `Supporting company sales and/or customer services efforts by
+        solving clints problems, help to get answers, and manage conflicts. Later I
         involved in working with the receivables management team.`
       },
       {
         image: '/assets/images/lombard.png',
         name: `Customer service representative - Lombard Lízing`,
         date: '2010 - 2012 ',
-        description: `Supporing company sales and/or customer services efforts by taking cafe
-         of the clients problems, help them with their issues with the contrats,
-          give information when the cliets needed.`
+        description: `Supporting company sales and/or customer services efforts by taking cafe
+        of the clients problems, help them with their issues with the contrats,
+        give information when the clients needed.`
       },
       {
         image: '/assets/images/otp.png',
         name: 'Customer service representative - OTP Bank',
         date: '2009 - 2010',
-        description: `Supporing company sales and/or customer services efforts by dealing
+        description: `Supporting company sales and/or customer services efforts by dealing
         with a breach of contract, accepting a payment agreement with non-paying customers,
         initiating a recovery if necessary.`
       }
@@ -125,16 +134,16 @@ export class DataStorageService {
 
   coutMeOn() {
     return [
-      `<span>What you can expect from me</span>:
-       Website deevelopment based on client's custom design, with the requested client-side
-       functions, considering the current UI and UX expectations. If needed, I also write
-       scripts on server side (to a low complexity level). After completing the tasks,
-       I manage the entire life cycle of the website from deploying to maintenance,
-       through further improvements, finally to the later exchange of the website.`,
-      `<span> Unfortunately, you can not count on me with</span>: Server side MVC systems,
-       and JAVA language. If that you need, unfortunately I cannot help you - at least yet.
-       I am open to new technologies, I would like to learn how to use MVC systems,
-       or JAVA language. `
+      `What you can expect from me:
+      Website development based on client's custom design, with the requested client-side
+      functions, considering the current UI and UX expectations. If needed, I also write
+      scripts on server side (to a low complexity level). After completing the tasks,
+      I manage the entire life cycle of the website from deploying to maintenance,
+      through further improvements, finally to the later exchange of the website.`,
+      ` Unfortunately, you can not count on me with: Server side MVC systems,
+      and JAVA language. If that you need, unfortunately I cannot help you - at least yet.
+      I am open to new technologies, I would like to learn how to use MVC systems,
+      or JAVA language. `
     ];
   }
 
@@ -157,8 +166,7 @@ export class DataStorageService {
         subTitle: 'University of Szeged',
         description: `Computer Programming Degree, I studied Programmer Mathematics
          but I did not graduate.`
-      },
-
+      }
     ];
   }
 

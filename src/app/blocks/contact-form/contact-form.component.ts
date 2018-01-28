@@ -21,14 +21,18 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit() {
     this.formSubmitted = false;
+    this.name = '';
+    this.email = '';
+    this.message = '';
   }
 
   onSubmit() {
-    const sendEmail = 'mailto:kerekes.zsolt.job@gmail.com' +
-      '?subject=Letter from ' + this.name + ' via ' + this.email + '&body=' + this.message;
+    const sendEmail = `mailto:kerekes.zsolt.job@gmail.com?subject=Letter from ${this.name} via ${this.email}` +
+      '&body=' + this.message;
     this.formSubmitted = true;
-    alert('So.. this is served from Github pages..' +
-      'which means no server side script to send an email.So, sending this via your computer.');
+    alert(`So.. this is served from Github pages..
+Which means no server side script to send an email.
+So, sending this via your computer.`);
     window.open(sendEmail);
   }
 

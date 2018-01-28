@@ -1,18 +1,14 @@
-form {
-    box-sizing: border-box;
-    width: 60%;
-    margin: 1em auto;
-    input,
-    textarea {
-        width: 100%;
-        margin: 0.25em auto 1em auto;
+@import './../../../assets/css/colors';
+.full-width {
+    width: 80%;
+    margin-left: 10%;
+    padding: inherit 2.5%;
+    input, textarea {
+        text-align: right;
     }
-    input.ng-valid,
-    textarea.ng-valid {
-        background-color: rgba(0, 128, 0, 0.185);
-    }
-    input.ng-invalid.ng-touched,
-    textarea.ng-invalid.ng-touched {
-        background-color: rgba(255, 0, 0, 0.226);
-    }
+}
+
+.right {
+    text-align: right;
+    margin-bottom: 2em;
 }

@@ -1,53 +1,54 @@
-<section class="from" *ngIf="!formSubmitted;else submitted">
+<mat-card>
 
-  <h2> Contact me via filling the form </h2>
-  <br>
-  <br>
+  <mat-card-header>
+    <mat-card-title><h2>Contact me via filling the form</h2></mat-card-title>
+  </mat-card-header>
 
-  <form #form="ngForm" (ngSubmit)="onSubmit()">
+  <mat-card-content>
 
-    <div>
-      <label for="name">Your Name</label>
-      <input type="text" name="name" [(ngModel)]="name" required>
-      <span *ngIf="form.touched && (name == '' || name== undefined) ">Name field is required to fill
-        <br>
-        <br>
-        <br>
-      </span>
-    </div>
+    <section *ngIf="!formSubmitted;else submitted">
 
-    <div>
-      <label for="name">Your Email address</label>
-      <input type="text" name="email" [(ngModel)]="email" required email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-      <span *ngIf="form.touched && (email == '' || email== undefined) ">Email field is required to fill
-        <br>
-        <br>
-        <br>
-      </span>
-    </div>
+      <form #form="ngForm" (ngSubmit)="onSubmit()">
 
-    <div>
-      <label for="message">Your Message</label>
-      <textarea name="message" [(ngModel)]="message" required></textarea>
-      <span *ngIf="form.touched && (message == '' || message== undefined) ">Message field is required to fill
-        <br>
-        <br>
-        <br>
-      </span>
-    </div>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Your Name" maxlength="25" type="text" name="name" id="name" [(ngModel)]="name" required>
+          <mat-error *ngIf="form.touched && (name == '' || name== undefined) ">
+            Name field is required to fill
+          </mat-error>
+          <mat-hint align="end">{{name.length}} / 25</mat-hint>
+        </mat-form-field>
 
-    <div>
-      <input type="submit" value="Send" [disabled]="form.invalid">
-    </div>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Your Email" type="email" name="email" [(ngModel)]="email" required email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+          <mat-hint align="end">{{email.length}} / 25</mat-hint>
+          <mat-error *ngIf="form.touched && (email == '' || email== undefined)">
+            Email field is required to fill
+          </mat-error>
+        </mat-form-field>
 
-  </form>
+        <mat-form-field class="full-width">
+          <textarea name="message" [(ngModel)]="message" required matInput placeholder="Your Message" matTextareaAutosize matAutosizeMinRows="2"
+            matAutosizeMaxRows="5"></textarea>
+          <mat-error *ngIf="form.touched && (message == '' || message== undefined) ">
+            Message field is required to fill
+          </mat-error>
+        </mat-form-field>
 
-</section>
+        <div class="full-width right">
+          <button class="button" type="submit" mat-raised-button color="primary" [disabled]="form.invalid">Send</button>
+        </div>
 
-<ng-template #submitted>
-  <br>
-  <br>
-  <h2>Form Submitted. Thank You!</h2>
-  <br>
-  <br>
-</ng-template>
+      </form>
+
+    </section>
+
+    <ng-template #submitted>
+      <br>
+      <br>
+      <h2>Form Submitted. Thank You!</h2>
+      <br>
+      <br>
+    </ng-template>
+
+  </mat-card-content>
+</mat-card>
