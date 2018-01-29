@@ -39,5 +39,8 @@
         color: $secondarybgcolor;
         text-align: right;
         text-shadow: 0px 0px 3px #111111;
+        @media (max-width: 960px) {
+          position:relative;
+        }
     }
 }

@@ -1,0 +1,1 @@
+ng build -prod --output-path docs -aot --buildOptimizer --base-href /cv/

@@ -12,6 +12,7 @@ export class VideoComponent implements OnInit {
   picSrc: string;
   videoSrc: string[];
   index: number;
+  shown: boolean;
 
   constructor(private dataStorageService: DataStorageService) { }
 
@@ -20,6 +21,8 @@ export class VideoComponent implements OnInit {
     this.picSrc = '/assets/images/soundoff.png';
     this.videoSrc = this.dataStorageService.videoSrc();
     this.index = Math.floor((Math.random() * this.videoSrc.length));
+    window.onresize = this.whenResized;
+    this.whenResized();
   }
 
   soundOnOff() {
@@ -27,4 +30,7 @@ export class VideoComponent implements OnInit {
     this.picSrc = this.muted ? '/assets/images/soundoff.png' : '/assets/images/soundon.png';
   }
 
+  whenResized() {
+    this.shown = (window.innerWidth >= 960) ? true : false;
+  }
 }

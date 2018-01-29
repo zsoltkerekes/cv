@@ -1,14 +1,27 @@
 header {
-    font-size: 75%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 15%;
+  font-size: 75%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15%;
+  @media (max-width:961px) {
+    position: static;
+    z-index: 5000;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width:960px) {}
 }
 
 .mainContent {
-    width: 75%;
-    padding: 2.5% 5%;
-    float: left;
+  width: 75%;
+  padding: 2.5% 5%;
+  float: left;
+  @media (max-width:961px) {
+    width: 90%;
+    floating: none;
+  }
+
 }
