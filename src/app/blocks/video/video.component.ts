@@ -18,7 +18,7 @@ export class VideoComponent implements OnInit {
 
   ngOnInit() {
     this.muted = true;
-    this.picSrc = '/assets/images/soundoff.png';
+    this.picSrc = 'assets/images/soundoff.png';
     this.videoSrc = this.dataStorageService.videoSrc();
     this.index = Math.floor((Math.random() * this.videoSrc.length));
     window.onresize = this.whenResized;
@@ -27,7 +27,7 @@ export class VideoComponent implements OnInit {
 
   soundOnOff() {
     this.muted = !this.muted;
-    this.picSrc = this.muted ? '/assets/images/soundoff.png' : '/assets/images/soundon.png';
+    this.picSrc = this.muted ? 'assets/images/soundoff.png' : 'assets/images/soundon.png';
   }
 
   whenResized() {
