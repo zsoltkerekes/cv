@@ -125,22 +125,22 @@ export class DataStorageService {
   aboutMe() {
     return [
       `I have been working with customers since 2006. I spent 10 years in the role of
-      call center operator, solving various kind of problems on a daily basis. But what
+      call center operator, solving various kinds of problems on a daily basis. But what
       I wanted to do, is my original profession, which is programming.`,
       ` In the summer of 2016 there was an opportunity to start to work as a front-end developer. Since
        then I have been coding, my goal is to be a full web developer in time.`
     ];
   }
 
-  coutMeOn() {
+  coutOnMe() {
     return [
-      `What you can expect from me:
+      `<span>What you can expect from me:</span>
       Website development based on client's custom design, with the requested client-side
       functions, considering the current UI and UX expectations. If needed, I also write
       scripts on server side (to a low complexity level). After completing the tasks,
       I manage the entire life cycle of the website from deploying to maintenance,
       through further improvements, finally to the later exchange of the website.`,
-      ` Unfortunately, you can not count on me with: Server side MVC systems,
+      `<span>Unfortunately, you can not count on me with:</span> Server side MVC systems,
       and JAVA language. If that you need, unfortunately I cannot help you - at least yet.
       I am open to new technologies, I would like to learn how to use MVC systems,
       or JAVA language. `

@@ -13,7 +13,7 @@ import { ProfessionalExperienceComponent } from './pages/professional-experience
 import { StudyComponent } from './pages/study/study.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { VideoComponent } from './blocks/video/video.component';
-import { CountMeOnComponent } from './blocks/count-me-on/count-me-on.component';
+import { CountOnMeComponent } from './blocks/count-on-me/count-on-me.component';
 import { ExperienceProgressComponent } from './blocks/experience-progress/experience-progress.component';
 import { AboutMeTextComponent } from './blocks/about-me-text/about-me-text.component';
 import { ReferenceListComponent } from './blocks/reference-list/reference-list.component';
@@ -35,7 +35,7 @@ import { DataStorageService } from './shared/services/data-storage.service';
     StudyComponent,
     ContactsComponent,
     VideoComponent,
-    CountMeOnComponent,
+    CountOnMeComponent,
     ExperienceProgressComponent,
     AboutMeTextComponent,
     ReferenceListComponent,

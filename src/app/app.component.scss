@@ -3,7 +3,7 @@ header {
   height: 100vh;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 15%;
   @media (max-width:961px) {
     position: static;
@@ -18,7 +18,7 @@ header {
 .mainContent {
   width: 75%;
   padding: 2.5% 5%;
-  float: left;
+  float: right;
   @media (max-width:961px) {
     width: 90%;
     floating: none;

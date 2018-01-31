@@ -14,14 +14,16 @@ export class VideoComponent implements OnInit {
   index: number;
   shown: boolean;
 
-  constructor(private dataStorageService: DataStorageService) { }
+  constructor(private dataStorageService: DataStorageService) {
+    window.onresize = this.whenResized;
+  }
 
   ngOnInit() {
     this.muted = true;
     this.picSrc = 'assets/images/soundoff.png';
     this.videoSrc = this.dataStorageService.videoSrc();
     this.index = Math.floor((Math.random() * this.videoSrc.length));
-    window.onresize = this.whenResized;
+    window.addEventListener('resize',  this.whenResized);
     this.whenResized();
   }
 

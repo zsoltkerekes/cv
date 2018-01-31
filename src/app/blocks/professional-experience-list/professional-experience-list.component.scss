@@ -1,21 +1,20 @@
 .szlogo {
-    width: 100%;
-    text-align: left;
-    img {
-        width: auto;
-        height: 5em;
-        float: left;
-    }
-    .disz {
-        margin-bottom: 3em;
-    }
+  width: 100%;
+  text-align: left;
+
+  img {
+    width: auto;
+    height: 5em;
+    float: left;
+  }
+
+  .disz {
+    margin-bottom: 3em;
+  }
 }
 
 .full-width {
-    width: 80%;
-    margin-left: 10%;
-    padding: inherit 2.5%;
-    input {
-        text-align: right;
-    }
+  width: 80%;
+  margin-left: 10%;
+  padding: inherit 2.5%;
 }

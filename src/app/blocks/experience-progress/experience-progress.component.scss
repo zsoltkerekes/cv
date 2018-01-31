@@ -1,20 +1,17 @@
 .bar {
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 1em;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 1em;
 }
 
 .label {
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 0.3em;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: .3em;
 }
 
 .full-width {
-    width: 80%;
-    margin-left: 10%;
-    padding: inherit 2.5%;
-    input {
-        text-align: right;
-    }
+  width: 80%;
+  margin-left: 10%;
+  padding: inherit 2.5%;
 }
