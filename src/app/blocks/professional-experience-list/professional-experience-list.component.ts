@@ -18,7 +18,14 @@ export class ProfessionalExperienceListComponent implements OnInit {
   ngOnInit() {
 
     this.search = '';
-    this.professionalExperiences = this.dataStorageService.professionalExperiences();
+
+    this.dataStorageService.professionalExperiences()
+    .subscribe(
+      (response) => {
+        this.professionalExperiences = response.json();
+      },
+      (error) => { console.error(error); }
+      );
 
   }
 

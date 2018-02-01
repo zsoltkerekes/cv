@@ -13,7 +13,13 @@ export class CountOnMeComponent implements OnInit {
   constructor(private dataStorageService: DataStorageService) { }
 
   ngOnInit() {
-    this.countOnMe = this.dataStorageService.coutOnMe();
+    this.dataStorageService.coutOnMe()
+      .subscribe(
+      (response) => {
+        this.countOnMe = response.json();
+      },
+      (error) => { console.error(error); }
+      );
   }
 
 }

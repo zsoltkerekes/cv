@@ -13,7 +13,14 @@ export class AboutMeTextComponent implements OnInit {
   constructor(private dataStorageService: DataStorageService) { }
 
   ngOnInit() {
-    this.aboutMe = this.dataStorageService.aboutMe();
+
+    this.dataStorageService.aboutMe()
+      .subscribe(
+      (response) => {
+        this.aboutMe = response.json();
+      },
+      (error) => { console.error(error); }
+      );
   }
 
 }

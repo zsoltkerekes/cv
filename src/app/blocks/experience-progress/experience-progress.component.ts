@@ -15,7 +15,15 @@ export class ExperienceProgressComponent implements OnInit {
 
   ngOnInit() {
     this.search = '';
-    this.programmingSkills = this.dataStorageService.programmingSkills().sort(this.byProgress);
+
+    this.dataStorageService.programmingSkills()
+      .subscribe(
+      (response) => {
+        this.programmingSkills = response.json().sort(this.byProgress);
+      },
+      (error) => { console.error(error); }
+      );
+
   }
 
   byProgress(a, b) {

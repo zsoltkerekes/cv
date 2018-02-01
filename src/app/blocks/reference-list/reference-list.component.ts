@@ -16,7 +16,14 @@ export class ReferenceListComponent implements OnInit {
 
   ngOnInit() {
     this.search = '';
-    this.references = this.dataStorageService.references().sort(this.byPriority);
+
+    this.dataStorageService.references()
+      .subscribe(
+      (response) => {
+        this.references = response.json().sort(this.byPriority);
+      },
+      (error) => { console.error(error); }
+      );
   }
 
   byPriority(a, b) {

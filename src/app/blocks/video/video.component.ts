@@ -15,7 +15,6 @@ export class VideoComponent implements OnInit {
   shown: boolean;
 
   constructor(private dataStorageService: DataStorageService) {
-    window.onresize = this.whenResized;
   }
 
   ngOnInit() {

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './shared/modules/material/material.module';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -47,6 +48,7 @@ import { DataStorageService } from './shared/services/data-storage.service';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     AppRoutingModule,
     FormsModule,
     MaterialModule

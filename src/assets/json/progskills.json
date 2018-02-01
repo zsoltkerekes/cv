@@ -1,0 +1,142 @@
+[
+  {
+    "name": "HTML",
+    "progress": 95
+  },
+  {
+    "name": "HTML5",
+    "progress": 90
+  },
+  {
+    "name": "CSS",
+    "progress": 90
+  },
+  {
+    "name": "CSS3",
+    "progress": 85
+  },
+  {
+    "name": "Javascript",
+    "progress": 75
+  },
+  {
+    "name": "JQuery",
+    "progress": 50
+  },
+  {
+    "name": "PHP",
+    "progress": 25
+  },
+  {
+    "name": "SQL",
+    "progress": 10
+  },
+  {
+    "name": "Static site building",
+    "progress": 85
+  },
+  {
+    "name": "English language",
+    "progress": 70
+  },
+  {
+    "name": "Wordpress",
+    "progress": 25
+  },
+  {
+    "name": "Photoshop",
+    "progress": 10
+  },
+  {
+    "name": "Yii",
+    "progress": 10
+  },
+  {
+    "name": "Google Analytics",
+    "progress": 30
+  },
+  {
+    "name": "Git",
+    "progress": 40
+  },
+  {
+    "name": "GitHub",
+    "progress": 40
+  },
+  {
+    "name": "TortoiseSVN",
+    "progress": 35
+  },
+  {
+    "name": "AJAX",
+    "progress": 60
+  },
+  {
+    "name": "AngularJS",
+    "progress": 70
+  },
+  {
+    "name": "Bootstrap",
+    "progress": 50
+  },
+  {
+    "name": "Jasmine",
+    "progress": 50
+  },
+  {
+    "name": "Jest ",
+    "progress": 50
+  },
+  {
+    "name": "Redux",
+    "progress": 70
+  },
+  {
+    "name": "Webpack ",
+    "progress": 70
+  },
+  {
+    "name": "ramda.js",
+    "progress": 45
+  },
+  {
+    "name": "Clean Code",
+    "progress": 70
+  },
+  {
+    "name": "Functional testing",
+    "progress": 80
+  },
+  {
+    "name": "Karma",
+    "progress": 50
+  },
+  {
+    "name": "Crossbrowser Coding",
+    "progress": 75
+  },
+  {
+    "name": "Responsive Site Building",
+    "progress": 80
+  },
+  {
+    "name": "GruntJs",
+    "progress": 40
+  },
+  {
+    "name": "NPM",
+    "progress": 80
+  },
+  {
+    "name": "Visual Studio Code",
+    "progress": 80
+  },
+  {
+    "name": "Less CSS",
+    "progress": 75
+  },
+  {
+    "name": "Sass",
+    "progress": 75
+  }
+]

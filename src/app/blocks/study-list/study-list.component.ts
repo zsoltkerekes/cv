@@ -17,7 +17,13 @@ export class StudyListComponent implements OnInit {
   constructor(private dataStorageService: DataStorageService) { }
 
   ngOnInit() {
-    this.studies = this.dataStorageService.studies();
+    this.dataStorageService.studies()
+      .subscribe(
+      (response) => {
+        this.studies = response.json();
+      },
+      (error) => { console.error(error); }
+      );
   }
 
 }

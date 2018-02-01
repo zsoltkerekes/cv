@@ -11,10 +11,13 @@ export class Page404Component implements OnInit {
 
   constructor(
     private title: Title,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) { }
 
   ngOnInit() {
     this.title.setTitle(this.activatedRoute.snapshot.data['pageTitle']);
   }
+
+
 }
+
