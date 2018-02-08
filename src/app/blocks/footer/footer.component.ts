@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SmoothScrollService } from '../../shared/services/smooth-scroll.service';
 
 @Component({
   selector: 'cv-footer',
@@ -8,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class FooterComponent implements OnInit {
   date: Date;
-  constructor() {
+  constructor(
+    public scroll: SmoothScrollService
+  ) {
   }
   ngOnInit() {
     this.date = new Date();
   }
+
 
 }

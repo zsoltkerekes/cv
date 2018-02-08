@@ -24,6 +24,7 @@ import { FooterComponent } from './blocks/footer/footer.component';
 import { ContactFormComponent } from './blocks/contact-form/contact-form.component';
 import { FilterPipe } from './shared/pipes/filter.pipe';
 import { DataStorageService } from './shared/services/data-storage.service';
+import { SmoothScrollService } from './shared/services/smooth-scroll.service';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { DataStorageService } from './shared/services/data-storage.service';
     MaterialModule
   ],
   providers: [
-    DataStorageService
+    DataStorageService,
+    SmoothScrollService
   ],
   bootstrap: [
     AppComponent
