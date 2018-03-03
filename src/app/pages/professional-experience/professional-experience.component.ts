@@ -12,7 +12,9 @@ export class ProfessionalExperienceComponent implements OnInit {
   constructor(
     private title: Title,
     private activatedRoute: ActivatedRoute
-  ) { }
+  ) {
+    document.documentElement.scrollTop = 0;
+  }
 
   ngOnInit() {
     this.title.setTitle(this.activatedRoute.snapshot.data['pageTitle']);

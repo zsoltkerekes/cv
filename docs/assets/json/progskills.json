@@ -138,5 +138,9 @@
   {
     "name": "Sass",
     "progress": 75
+  },
+  {
+    "name": "React",
+    "progress": 75
   }
 ]
