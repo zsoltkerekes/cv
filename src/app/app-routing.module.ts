@@ -14,42 +14,48 @@ const routes: Routes = [
     path: 'about-me',
     component: AboutMeComponent,
     data: {
-      pageTitle: `${baseTitle}`
+      pageTitle: `${baseTitle}`,
+      animation: { value: 'about-me'}
     }
   },
   {
     path: 'reference',
     component: ReferenceComponent,
     data: {
-      pageTitle: `Reference, ${baseTitle}`
+      pageTitle: `Reference, ${baseTitle}`,
+      animation: { value: 'reference'}
     }
   },
   {
     path: 'professional-experience',
     component: ProfessionalExperienceComponent,
     data: {
-      pageTitle: `Professional Experience, ${baseTitle}`
+      pageTitle: `Professional Experience, ${baseTitle}`,
+      animation: { value: 'professional-experience'}
     }
   },
   {
     path: 'study',
     component: StudyComponent,
     data: {
-      pageTitle: `Study, ${baseTitle}`
+      pageTitle: `Study, ${baseTitle}`,
+      animation: { value: 'study'}
     }
   },
   {
     path: 'contacts',
     component: ContactsComponent,
     data: {
-      pageTitle: `Contacts, ${baseTitle}`
+      pageTitle: `Contacts, ${baseTitle}`,
+      animation: { value: 'contacts'}
     }
   },
   {
     path: '404', component:
       Page404Component,
       data: {
-        pageTitle: `Page Not Exists`
+        pageTitle: `Page Not Exists`,
+        animation: { value: '404'}
       }
   },
   {
