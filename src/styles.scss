@@ -3,7 +3,11 @@
 @import './assets/css/colors';
 //////////
 html {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1,
@@ -12,52 +16,52 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 150%;
-    line-height: 150%;
-    text-transform: uppercase;
-    font-family: 'Coda', cursive;
-    text-align: right;
+  font-size: 150%;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-family: 'Coda', cursive;
+  text-align: right;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 2em;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .fullpic {
-    width: 100%;
-    height: 8em;
-    margin: 3em auto;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 8em;
+  margin: 3em auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 section p {
-    text-align: center;
-    line-height: 125%;
-    padding: 2em 0em;
-    font-size: 110%;
+  text-align: center;
+  line-height: 125%;
+  padding: 2em 0em;
+  font-size: 110%;
 }
 
 .tocenter {
-    text-align: left;
-    width: 28em;
-    margin: 0 auto;
+  text-align: left;
+  width: 28em;
+  margin: 0 auto;
 }
 
 .justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .justify span {
-    font-weight: bold;
-    font-size: 105%;
+  font-weight: bold;
+  font-size: 105%;
 }
 
 .disz {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }

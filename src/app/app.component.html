@@ -5,3 +5,8 @@
 <section [@routerAnimations]="prepareRouteTransition(outlet)" class="mainContent">
   <router-outlet #outlet="outlet"></router-outlet>
 </section>
+
+<cookie-law #cookieLaw
+            name="ng4CookieLaw"
+            (isSeen)="cookieLawSeen = $event"
+            target="_blank"></cookie-law>

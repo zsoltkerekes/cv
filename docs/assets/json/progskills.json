@@ -1,18 +1,11 @@
 [
   {
-    "name": "HTML",
-    "progress": 95
-  },
-  {
-    "name": "HTML5",
+    "name": "HTML/HTML5",
     "progress": 90
   },
+
   {
-    "name": "CSS",
-    "progress": 90
-  },
-  {
-    "name": "CSS3",
+    "name": "CSS/CSS3",
     "progress": 85
   },
   {
@@ -32,7 +25,7 @@
     "progress": 10
   },
   {
-    "name": "Static site building",
+    "name": "Static, Responsive site building",
     "progress": 85
   },
   {
@@ -73,7 +66,11 @@
   },
   {
     "name": "AngularJS",
-    "progress": 70
+    "progress": 60
+  },
+  {
+    "name": "Angular 2+",
+    "progress": 80
   },
   {
     "name": "Bootstrap",
@@ -105,7 +102,7 @@
   },
   {
     "name": "Functional testing",
-    "progress": 80
+    "progress": 60
   },
   {
     "name": "Karma",
@@ -116,19 +113,15 @@
     "progress": 75
   },
   {
-    "name": "Responsive Site Building",
-    "progress": 80
-  },
-  {
     "name": "GruntJs",
     "progress": 40
   },
   {
-    "name": "NPM",
+    "name": "Visual Studio Code",
     "progress": 80
   },
   {
-    "name": "Visual Studio Code",
+    "name": "Webstorm",
     "progress": 80
   },
   {

@@ -9,14 +9,16 @@
     <hr class="disz">
 
     <p class="justify">
-      I use these programming skills in my current workplace, working in a team (I consider myself a team player). I'm writing
+      I use these programming skills in my current workplace, working in a team (I consider myself a team player). I'm
+      writing
       in a clean code style, so others can work my code later. In each case, I try to have a positive attitude, to be an
       efficient and reliable team member.
     </p>
 
     <mat-form-field class="full-width">
-      <input matInput placeholder="Type here something to start the search" maxlength="25" type="search" name="search" id="search"
-        [(ngModel)]="search">
+      <input matInput placeholder="Type here something to start the search" maxlength="25" type="search" name="search"
+             id="search"
+             [(ngModel)]="search">
       <mat-hint align="end">{{search.length}} / 25</mat-hint>
     </mat-form-field>
 
@@ -24,11 +26,15 @@
     <br>
     <br>
 
-    <span *ngFor="let skill of programmingSkills | filter:search">
-      <mat-label class="label"> {{skill.name}}
-        <mat-progress-bar class="bar" mode="determinate" [value]="skill.progress"></mat-progress-bar>
-      </mat-label>
-    </span>
+    <div class="shortened">
+
+      <span *ngFor="let skill of programmingSkills | filter:search">
+        <mat-label class="label"> {{skill.name}}
+          <mat-progress-bar class="bar" mode="determinate" [value]="skill.progress"></mat-progress-bar>
+        </mat-label>
+      </span>
+
+    </div>
 
     <p>I am constantly trying to improve my knowledge.</p>
 
