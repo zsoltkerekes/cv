@@ -26,7 +26,6 @@ import {MaterialModule} from './shared/modules/material/material.module';
 import {FilterPipe} from './shared/pipes/filter.pipe';
 import {DataStorageService} from './shared/services/data-storage.service';
 import {SmoothScrollService} from './shared/services/smooth-scroll.service';
-import {CookieLawModule} from 'angular2-cookie-law';
 
 @NgModule({
   declarations: [
@@ -55,8 +54,7 @@ import {CookieLawModule} from 'angular2-cookie-law';
     HttpModule,
     AppRoutingModule,
     FormsModule,
-    MaterialModule,
-    CookieLawModule
+    MaterialModule
   ],
   providers: [
     DataStorageService,

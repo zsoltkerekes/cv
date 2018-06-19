@@ -1,6 +1,5 @@
 import {animate, animation, style, transition, trigger} from '@angular/animations';
-import {Component, OnInit, ViewChild} from '@angular/core';
-import {NavigationEnd, Router} from '@angular/router';
+import {Component} from '@angular/core';
 
 const slideAnimation = animation([
   style({opacity: .3, position: 'absolute', left: 0, right: 0, transform: 'translate3d(40%,0,0)'}),
@@ -17,30 +16,15 @@ const slideAnimation = animation([
     ])
   ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  cookieLawSeen: boolean;
-
-  @ViewChild('cookieLaw')
-  cookieLawEl: any;
-
-  constructor(public router: Router) {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        (<any>window).ga('set', 'page', event.urlAfterRedirects);
-        (<any>window).ga('send', 'pageview');
-      }
-    });
-  }
+  constructor() {}
 
   prepareRouteTransition(outlet) {
     const animation = outlet.activatedRouteData['animation'] || {};
     return animation['value'] || null;
   }
 
-  ngOnInit() {
-    this.cookieLawSeen = this.cookieLawEl.cookieLawSeen;
-  }
 
 }
 
