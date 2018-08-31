@@ -50,11 +50,11 @@
   },
   {
     "name": "Git",
-    "progress": 40
+    "progress": 65
   },
   {
     "name": "GitHub",
-    "progress": 40
+    "progress": 65
   },
   {
     "name": "TortoiseSVN",
@@ -62,7 +62,7 @@
   },
   {
     "name": "AJAX",
-    "progress": 60
+    "progress": 65
   },
   {
     "name": "AngularJS",
@@ -74,7 +74,7 @@
   },
   {
     "name": "Bootstrap",
-    "progress": 50
+    "progress": 35
   },
   {
     "name": "Jasmine",
@@ -86,7 +86,7 @@
   },
   {
     "name": "Redux",
-    "progress": 70
+    "progress": 80
   },
   {
     "name": "Webpack ",
@@ -118,11 +118,11 @@
   },
   {
     "name": "Visual Studio Code",
-    "progress": 80
+    "progress": 85
   },
   {
     "name": "Webstorm",
-    "progress": 80
+    "progress": 85
   },
   {
     "name": "Less CSS",
