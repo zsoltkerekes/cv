@@ -1,16 +1,11 @@
 [
   {
-    "name": "HTML/HTML5",
-    "progress": 90
-  },
-
-  {
-    "name": "CSS/CSS3",
+    "name": "HTML/HTML5, CSS/CSS3",
     "progress": 85
   },
   {
     "name": "Javascript",
-    "progress": 75
+    "progress": 80
   },
   {
     "name": "JQuery",
@@ -118,11 +113,11 @@
   },
   {
     "name": "Visual Studio Code",
-    "progress": 85
+    "progress": 80
   },
   {
     "name": "Webstorm",
-    "progress": 85
+    "progress": 80
   },
   {
     "name": "Less CSS",
