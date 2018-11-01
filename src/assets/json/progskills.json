@@ -4,7 +4,7 @@
     "progress": 85
   },
   {
-    "name": "Javascript",
+    "name": "Javascript (ES5, ES6)",
     "progress": 80
   },
   {
@@ -72,7 +72,7 @@
     "progress": 50
   },
   {
-    "name": "Jest ",
+    "name": "Jest",
     "progress": 50
   },
   {
@@ -80,11 +80,11 @@
     "progress": 80
   },
   {
-    "name": "Webpack ",
+    "name": "Webpack",
     "progress": 70
   },
   {
-    "name": "ramda.js",
+    "name": "RamdaJs",
     "progress": 45
   },
   {
@@ -124,7 +124,7 @@
     "progress": 75
   },
   {
-	"name": "JIRA, Stash",
-	"progress": 70
+    "name": "JIRA, Stash",
+    "progress": 70
   }
 ]
