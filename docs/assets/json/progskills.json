@@ -29,7 +29,7 @@
   },
   {
     "name": "Wordpress",
-    "progress": 25
+    "progress": 20
   },
   {
     "name": "Photoshop",
@@ -41,15 +41,15 @@
   },
   {
     "name": "Google Analytics",
-    "progress": 30
+    "progress": 20
   },
   {
     "name": "Git",
-    "progress": 70
+    "progress": 75
   },
   {
     "name": "GitHub",
-    "progress": 70
+    "progress": 75
   },
   {
     "name": "AJAX",
@@ -57,7 +57,7 @@
   },
   {
     "name": "AngularJS",
-    "progress": 60
+    "progress": 50
   },
   {
     "name": "Angular 2+",
@@ -85,7 +85,7 @@
   },
   {
     "name": "RamdaJs",
-    "progress": 45
+    "progress": 40
   },
   {
     "name": "Clean Code",
@@ -125,6 +125,14 @@
   },
   {
     "name": "JIRA, Stash",
-    "progress": 70
+    "progress": 75
+  },
+  {
+    "name": "Vue",
+    "progress": 50
+  },
+  {
+    "name": "Vuex",
+    "progress": 50
   }
 ]
