@@ -11,7 +11,7 @@ export class ContactFormComponent implements OnInit {
 
   formSubmitted: boolean;
 
-  @ViewChild('form') form: NgForm;
+  @ViewChild('form', { static: false }) form: NgForm;
 
   name: string;
   email: string;
