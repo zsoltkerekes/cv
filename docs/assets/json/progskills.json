@@ -53,15 +53,19 @@
   },
   {
     "name": "AJAX",
-    "progress": 65
+    "progress": 70
   },
   {
     "name": "AngularJS",
-    "progress": 50
+    "progress": 40
   },
   {
     "name": "Angular 2+",
     "progress": 80
+  },
+  {
+    "name": "Angular Material",
+    "progress": 55
   },
   {
     "name": "Bootstrap",
@@ -134,5 +138,29 @@
   {
     "name": "Vuex",
     "progress": 50
+  },
+  {
+    "name": "Scrum",
+    "progress": 45
+  },
+  {
+    "name": "Node.Js",
+    "progress": 75
+  },
+  {
+    "name": "Express.Js",
+    "progress": 75
+  },
+  {
+    "name": "GraphQL",
+    "progress": 50
+  },
+  {
+    "name": "TypeScript",
+    "progress": 50
+  },
+  {
+    "name": "Websockets/Socket.io",
+    "progress": 45
   }
 ]
