@@ -1,4 +1,4 @@
-<mat-card class="mat-elevation-z3">
+<mat-card class="mat-elevation-z3 with-more-space">
   <mat-card-content>
     <mat-form-field class="full-width">
       <input matInput placeholder="Type here something to start the search"
@@ -9,7 +9,7 @@
   </mat-card-content>
 </mat-card>
 
-<mat-card class="mat-elevation-z3" *ngFor="let professionalExperience of professionalExperiences | filter:search">
+<mat-card class="mat-elevation-z3 with-more-space" *ngFor="let professionalExperience of professionalExperiences | filter:search">
   <mat-card-content>
     <div class="szlogo">
       <img [src]="professionalExperience.image"/>

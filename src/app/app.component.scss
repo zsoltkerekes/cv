@@ -19,6 +19,8 @@ header {
   width: 75%;
   padding: 2.5% 5%;
   float: right;
+  min-height: 101vh;
+
   @media (max-width:961px) {
     width: 90%;
     floating: none;

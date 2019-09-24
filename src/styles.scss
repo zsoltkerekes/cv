@@ -42,7 +42,7 @@ h1 {
 section p {
   text-align: center;
   line-height: 125%;
-  padding: 2em 0em;
+  padding: 1.25em 0em;
   font-size: 110%;
 }
 
@@ -69,4 +69,8 @@ section p {
 .smaller {
   font-size: 60%;
   opacity: .6;
+}
+
+.with-more-space {
+  margin-bottom: 2em;
 }
