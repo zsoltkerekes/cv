@@ -7,7 +7,7 @@ import { ProfessionalExperienceComponent } from './pages/professional-experience
 import { StudyComponent } from './pages/study/study.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 
-const baseTitle = 'Curriculum Vitae, Kerekes Zsolt, Front End Developer, Junior Software Engineer';
+const baseTitle = 'Curriculum Vitae | Kerekes Zsolt | Front End Developer | Software Engineer';
 
 const routes: Routes = [
   {
