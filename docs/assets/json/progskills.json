@@ -61,7 +61,7 @@
   },
   {
     "name": "Angular 2+",
-    "progress": 80
+    "progress": 75
   },
   {
     "name": "Angular Material",
@@ -125,7 +125,7 @@
   },
   {
     "name": "React",
-    "progress": 75
+    "progress": 65
   },
   {
     "name": "JIRA, Stash",
@@ -145,11 +145,11 @@
   },
   {
     "name": "Node.Js",
-    "progress": 75
+    "progress": 70
   },
   {
     "name": "Express.Js",
-    "progress": 75
+    "progress": 70
   },
   {
     "name": "GraphQL",

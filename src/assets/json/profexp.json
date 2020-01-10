@@ -9,13 +9,13 @@
     "image": "assets/images/epam.png",
     "name": "Epam Systems<br/><span class=\"smaller\">Junior Software Developer</span>",
     "date": "2017 - 2018",
-    "description": "Learning and using new programming patterns and techniques, new technologies, and programming client side MVC single page applications, SPA-s and PWA-s (Angular 2+, React), working with Git, Jira, Webstorm, etc. Also daily use of the core technologies, like JavaScript (ES6), CSS and HTML."
+    "description": "Learned and using new programming patterns and techniques, new technologies, programming SPA-s and PWA-s (Angular 2+, React), and Node.js, working with Git, Jira, Webstorm, etc. Also, daily use of the core technologies, like JavaScript (ES6), CSS and HTML. "
   },
   {
     "image": "assets/images/litologo.png",
     "name": "Litofilm<br/><span class=\"smaller\">Web Developer</span>",
     "date": "2015 - 2017",
-    "description": "From scratch I developed web sites for over two years, mostly clint side. We had a web designer who made the design by the wishes of the the client, but I was the person, who hold together each project, contact the client, manage the work process, write the code (mostly client side), find a freelancer to write the back-end part of the code (if necessary), performed manual functional testing then finalize the deal with the client, when the product was ready."
+    "description": "From scratch I developed web sites for over two years. We had a web designer who made the design by the wishes of the client, I hold together each project, contact the client, manage the work process, write the code (mostly client side), find a freelancer to write the back-end part of the code (if necessary), performed manual functional testing then finalize the deal with the client, when the product was ready."
   },
   {
     "image": "assets/images/telekom.png",
