@@ -1,8 +1,14 @@
 ﻿[
   {
+    "image": "assets/images/logmein.png",
+    "name": "LogMeIn<br/><span class=\"smaller\">Software Developer</span>",
+    "date": "2020 - present",
+    "description": "Developing features, fixing bugs, maintain code quality on daily basis on an enterprise level project."
+  },
+  {
     "image": "assets/images/epam.png",
     "name": "Epam Systems<br/><span class=\"smaller\">Software Developer</span>",
-    "date": "2018 - present",
+    "date": "2018 - 2020",
     "description": "Developing features, fixing bugs, maintain code quality on daily basis on an enterprise level project."
   },
   {
