@@ -7,7 +7,9 @@ import { ProfessionalExperienceComponent } from './pages/professional-experience
 import { StudyComponent } from './pages/study/study.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 
-const baseTitle = 'Curriculum Vitae | Kerekes Zsolt | Front End Developer | Software Engineer';
+const baseTitle = 'Curriculum Vitae | Zsolt Kerekes | Front End Developer | Software Engineer';
+
+// TODO introduce "hideable" routes via hidden: boolean property
 
 const routes: Routes = [
   {

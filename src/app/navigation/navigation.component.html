@@ -7,17 +7,35 @@
             <mat-card-title class="title">Zsolt Kerekes</mat-card-title>
           </mat-card-header>
           <mat-card-content>
-            <img class="img mat-elevation-z6"src="assets/images/profile.jpg" alt="profile picture Zsolt Kerekes" title="Zsolt Kerekes"
+            <img
+              class="img mat-elevation-z6"
+              src="assets/images/profile.jpg"
+              alt="profile picture Zsolt Kerekes"
+              title="Zsolt Kerekes"
             />
           </mat-card-content>
         </mat-card>
       </a>
 
       <mat-nav-list>
-        <a class="colorful mat-elevation-z1" mat-list-item *ngFor="let link of links" [routerLink]="link.routerLink" routerLinkActive="active">
-          {{link.anchorText}}
-        </a>
-        <a class="colorful mat-elevation-z1" mat-list-item href="https://www.linkedin.com/in/kerekes-zsolt/" target="_blank">LinkedIn Profile</a>
+        <span *ngFor="let link of links">
+          <a
+            mat-list-item
+            *ngIf="!link.hidden"
+            [routerLink]="link.routerLink"
+            routerLinkActive="active"
+            class="colorful mat-elevation-z1"
+          >
+            {{ link.anchorText }}
+          </a>
+        </span>
+        <a
+          class="colorful mat-elevation-z1"
+          mat-list-item
+          href="https://www.linkedin.com/in/kerekes-zsolt/"
+          target="_blank"
+          >LinkedIn Profile</a
+        >
       </mat-nav-list>
     </div>
 
@@ -29,9 +47,12 @@
       </button>
 
       <mat-menu #menu="matMenu">
-
-        <button mat-menu-item *ngFor="let link of links" [routerLink]="link.routerLink">
-          <span>{{link.anchorText}}</span>
+        <button
+          mat-menu-item
+          *ngFor="let link of links"
+          [routerLink]="link.routerLink"
+        >
+          <span>{{ link.anchorText }}</span>
         </button>
 
         <a href="https://www.linkedin.com/in/kerekes-zsolt/" target="_blank">
@@ -39,7 +60,6 @@
             <span>LinkedIn Profile</span>
           </button>
         </a>
-
       </mat-menu>
       <div class="clear"></div>
     </div>
