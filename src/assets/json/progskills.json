@@ -5,7 +5,7 @@
   },
   {
     "name": "Javascript (ES5, ES6)",
-    "progress": 80
+    "progress": 85
   },
   {
     "name": "JQuery",
@@ -20,28 +20,12 @@
     "progress": 10
   },
   {
-    "name": "Static, Responsive site building",
+    "name": "Static/Responsive site building",
     "progress": 85
   },
   {
     "name": "English language",
     "progress": 70
-  },
-  {
-    "name": "Wordpress",
-    "progress": 20
-  },
-  {
-    "name": "Photoshop",
-    "progress": 10
-  },
-  {
-    "name": "Yii",
-    "progress": 10
-  },
-  {
-    "name": "Google Analytics",
-    "progress": 20
   },
   {
     "name": "Git",
@@ -56,20 +40,12 @@
     "progress": 70
   },
   {
-    "name": "AngularJS",
-    "progress": 40
-  },
-  {
     "name": "Angular 2+",
-    "progress": 75
+    "progress": 65
   },
   {
     "name": "Angular Material",
     "progress": 55
-  },
-  {
-    "name": "Bootstrap",
-    "progress": 35
   },
   {
     "name": "Jasmine",
@@ -77,7 +53,7 @@
   },
   {
     "name": "Jest",
-    "progress": 50
+    "progress": 60
   },
   {
     "name": "Redux",
@@ -85,11 +61,7 @@
   },
   {
     "name": "Webpack",
-    "progress": 70
-  },
-  {
-    "name": "RamdaJs",
-    "progress": 40
+    "progress": 60
   },
   {
     "name": "Clean Code",
@@ -108,24 +80,12 @@
     "progress": 75
   },
   {
-    "name": "GruntJs",
-    "progress": 40
-  },
-  {
-    "name": "Visual Studio Code",
-    "progress": 80
-  },
-  {
-    "name": "Webstorm",
-    "progress": 80
-  },
-  {
     "name": "Sass/Less",
     "progress": 75
   },
   {
     "name": "React",
-    "progress": 65
+    "progress": 80
   },
   {
     "name": "JIRA, Stash",
@@ -141,7 +101,7 @@
   },
   {
     "name": "Scrum",
-    "progress": 45
+    "progress": 50
   },
   {
     "name": "Node.Js",
@@ -149,7 +109,7 @@
   },
   {
     "name": "Express.Js",
-    "progress": 70
+    "progress": 65
   },
   {
     "name": "GraphQL",
@@ -157,10 +117,14 @@
   },
   {
     "name": "TypeScript",
-    "progress": 50
+    "progress": 60
   },
   {
     "name": "Websockets/Socket.io",
     "progress": 45
+  },
+  {
+    "name": "C#",
+    "progress": 35
   }
 ]
