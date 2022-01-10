@@ -5,7 +5,7 @@
   },
   {
     "name": "Javascript (ES5, ES6)",
-    "progress": 85
+    "progress": 90
   },
   {
     "name": "JQuery",
@@ -85,19 +85,11 @@
   },
   {
     "name": "React",
-    "progress": 80
+    "progress": 85
   },
   {
     "name": "JIRA, Stash",
     "progress": 75
-  },
-  {
-    "name": "Vue",
-    "progress": 50
-  },
-  {
-    "name": "Vuex",
-    "progress": 50
   },
   {
     "name": "Scrum",
@@ -112,10 +104,6 @@
     "progress": 65
   },
   {
-    "name": "GraphQL",
-    "progress": 50
-  },
-  {
     "name": "TypeScript",
     "progress": 60
   },
@@ -125,6 +113,6 @@
   },
   {
     "name": "C#",
-    "progress": 35
+    "progress": 40
   }
 ]
