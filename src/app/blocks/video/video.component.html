@@ -1,6 +1,6 @@
 <mat-card id="video" class="mat-elevation-z3">
   <mat-card-content>
-    <div *ngIf="!videoLoading">
+    <div [ngClass]="{'hidden': videoLoading }">
       <video autoplay loop [muted]="muted" *ngIf="shown" #videoPlayer>
         <source type="video/mp4" [src]="video" />
       </video>

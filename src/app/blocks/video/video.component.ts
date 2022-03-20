@@ -1,4 +1,10 @@
-import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  AfterViewInit,
+  ViewChild,
+} from "@angular/core";
 import { DataStorageService } from "../../shared/services/data-storage.service";
 
 @Component({
@@ -6,7 +12,7 @@ import { DataStorageService } from "../../shared/services/data-storage.service";
   templateUrl: "./video.component.html",
   styleUrls: ["./video.component.scss"],
 })
-export class VideoComponent implements OnInit {
+export class VideoComponent implements OnInit, AfterViewInit {
   muted: boolean;
   soundPicSrc: string;
   nextPicSrc: string;
@@ -27,9 +33,16 @@ export class VideoComponent implements OnInit {
     this.videos = this.dataStorageService.videoSrc();
     this.index = 0;
     this.video = this.videos[this.index];
-    this.videoLoading = false;
+    this.videoLoading = true;
     window.addEventListener("resize", this.whenResized);
     this.whenResized();
+  }
+
+  ngAfterViewInit() {
+    this.videoplayer.nativeElement.oncanplay = () => {
+      this.videoLoading = false;
+      this.videoplayer.nativeElement.play();
+    };
   }
 
   setNextMovie() {
@@ -37,8 +50,9 @@ export class VideoComponent implements OnInit {
     const max = this.videos.length - 1;
     this.index = this.index < max ? this.index + 1 : 0;
     this.video = this.videos[this.index];
-    this.videoplayer.nativeElement.oncanplay = () =>
-      (this.videoLoading = false);
+    this.videoplayer.nativeElement.oncanplaythrough = () => {
+      this.videoLoading = false;
+    };
     this.videoplayer.nativeElement.load();
   }
 

@@ -50,8 +50,14 @@
   }
 
   .progress {
-    padding: 25% 0%;
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 45%;
+    left: 45%
+  }
+
+  .hidden {
+    opacity: 0;
   }
 }
