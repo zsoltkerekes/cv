@@ -31,7 +31,7 @@ export class VideoComponent implements OnInit, AfterViewInit {
     this.nextPicSrc = "assets/images/next.png";
     this.setSoundPicSrc();
     this.videos = this.dataStorageService.videoSrc();
-    this.index = 0;
+    this.index = Math.floor((Math.random() * this.videos.length));
     this.video = this.videos[this.index];
     this.videoLoading = true;
     window.addEventListener("resize", this.whenResized);
