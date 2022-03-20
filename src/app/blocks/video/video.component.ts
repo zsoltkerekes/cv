@@ -1,37 +1,54 @@
-import { Component, OnInit } from '@angular/core';
-import { DataStorageService } from '../../shared/services/data-storage.service';
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { DataStorageService } from "../../shared/services/data-storage.service";
 
 @Component({
-  selector: 'cv-video',
-  templateUrl: './video.component.html',
-  styleUrls: ['./video.component.scss']
+  selector: "cv-video",
+  templateUrl: "./video.component.html",
+  styleUrls: ["./video.component.scss"],
 })
 export class VideoComponent implements OnInit {
-
   muted: boolean;
-  picSrc: string;
-  videoSrc: string[];
+  soundPicSrc: string;
+  nextPicSrc: string;
+  videos: string[];
+  video: string;
   index: number;
   shown: boolean;
 
-  constructor(private dataStorageService: DataStorageService) {
-  }
+  @ViewChild('videoPlayer', {static: false}) videoplayer: ElementRef;
+
+  constructor(private dataStorageService: DataStorageService) {}
 
   ngOnInit() {
     this.muted = true;
-    this.picSrc = 'assets/images/soundoff.png';
-    this.videoSrc = this.dataStorageService.videoSrc();
-    this.index = Math.floor((Math.random() * this.videoSrc.length));
-    window.addEventListener('resize',  this.whenResized);
+    this.nextPicSrc = "assets/images/next.png";
+    this.setSoundPicSrc();
+    this.videos = this.dataStorageService.videoSrc();
+    this.index = 0;
+    this.video = this.videos[this.index];
+    window.addEventListener("resize", this.whenResized);
     this.whenResized();
+  }
+
+  setNextMovie() {
+    const max = this.videos.length - 1;
+    this.index = this.index < max ? this.index + 1 : 0;
+    this.video = this.videos[this.index];
+    this.videoplayer.nativeElement.load();
+  }
+
+  setSoundPicSrc() {
+    this.soundPicSrc = this.muted
+      ? "assets/images/soundoff.png"
+      : "assets/images/soundon.png";
   }
 
   soundOnOff() {
     this.muted = !this.muted;
-    this.picSrc = this.muted ? 'assets/images/soundoff.png' : 'assets/images/soundon.png';
+    this.setSoundPicSrc();
   }
 
   whenResized() {
-    this.shown = (window.innerWidth >= 960) ? true : false;
+    this.shown = window.innerWidth >= 960 ? true : false;
   }
 }

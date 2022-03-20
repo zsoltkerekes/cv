@@ -1,7 +1,7 @@
 ﻿[
   {
-    "image": "assets/images/logmein.png",
-    "name": "LogMeIn<br/><span class=\"smaller\">Software Developer</span>",
+    "image": "assets/images/lastpass.png",
+    "name": "LastPass<br/><span class=\"smaller\">Software Developer</span>",
     "date": "2020 - present",
     "description": "Working on a large-scale project with React, but also with core technologies, implementing features and fixing bugs on web app and also in browser extension. Started to get familiar with C# and .NET Core MVC."
   },

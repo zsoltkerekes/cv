@@ -1,46 +1,51 @@
-@import './../../../assets//css/colors';
+@import "./../../../assets//css/colors";
 #video {
-    position: relative;
-    background-image: url('./../../../assets/images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0em auto;
-    padding:0;
+  position: relative;
+  background-image: url("./../../../assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  margin: 0em auto;
+  padding: 0;
+  width: 100%;
+  background-size: cover;
+  video {
     width: 100%;
-    video {
-        width: 100%;
-        height: auto;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        margin-bottom:-0.2em;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: -0.2em;
+  }
+  .sound {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    background-color: rgba(50, 50, 50, 0.4);
+    padding: 1em;
+    position: absolute;
+    bottom: 1em;
+    right: 6em;
+    z-index: 1000;
+    &:hover {
+      background-color: rgba(50, 50, 50, 0.9);
     }
-    .sound {
-        width: 3em;
-        height: auto;
-        cursor: pointer;
-        background-color: rgba(50, 50, 50, 0.4);
-        padding: 1em;
-        position: absolute;
-        bottom: 1em;
-        right: 1em;
-        z-index: 1000;
-        &:hover {
-            background-color: rgba(50, 50, 50, 0.9);
-        }
+  }
+  .next {
+    @extend .sound;
+    right: 1em;
+  }
+  h1 {
+    width: 70%;
+    height: 46.5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(50, 50, 50, 0.4);
+    padding: 15%;
+    color: $secondarybgcolor;
+    text-align: right;
+    text-shadow: 0px 0px 3px #111111;
+    @media (max-width: 960px) {
+      position: relative;
     }
-    h1 {
-        width: 70%;
-        height: 46%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(50, 50, 50, 0.4);
-        padding: 15%;
-        color: $secondarybgcolor;
-        text-align: right;
-        text-shadow: 0px 0px 3px #111111;
-        @media (max-width: 960px) {
-          position:relative;
-        }
-    }
+  }
 }

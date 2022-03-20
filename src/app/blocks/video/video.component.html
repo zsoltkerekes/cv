@@ -1,11 +1,12 @@
 <mat-card id="video" class="mat-elevation-z3">
   <mat-card-content>
 
-    <video autoplay loop [muted]="muted" *ngIf="shown">
-      <source type="video/mp4" [src]="videoSrc[index]">
+    <video autoplay loop [muted]="muted" *ngIf="shown" #videoPlayer>
+      <source type="video/mp4" [src]="video">
     </video>
 
-    <img [src]="picSrc" class="sound" alt="Sound Off" title="Sound On" (click)="soundOnOff()" *ngIf="shown" />
+    <img [src]="soundPicSrc" class="sound" alt="Sound Control" title="Sound Control" (click)="soundOnOff()" *ngIf="shown" />
+    <img [src]="nextPicSrc" class="next" alt="Next background movie" title="Next background movie" (click)="setNextMovie()" *ngIf="shown" />
 
     <h1>
       <br/>

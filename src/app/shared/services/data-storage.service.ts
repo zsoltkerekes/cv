@@ -36,7 +36,8 @@ export class DataStorageService {
     return [
       'assets/video/adventure-is-calling.mp4',
       'assets/video/if-i-could.mp4',
-      'assets/video/a-gift-from-rome.mp4'
+      'assets/video/a-gift-from-rome.mp4',
+      'assets/video/szeged-time-lapse-2012.mp4'
     ];
   }
 
