@@ -9,19 +9,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatListModule,
-    MatInputModule,
-    MatProgressBarModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatIconModule
-  ],
   exports: [
     BrowserAnimationsModule,
     MatCardModule,
@@ -30,7 +20,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatProgressBarModule,
     MatButtonModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule
   ]
 })
 export class MaterialModule { }

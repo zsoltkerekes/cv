@@ -1,23 +1,40 @@
 <mat-card id="video" class="mat-elevation-z3">
   <mat-card-content>
+    <div *ngIf="!videoLoading">
+      <video autoplay loop [muted]="muted" *ngIf="shown" #videoPlayer>
+        <source type="video/mp4" [src]="video" />
+      </video>
 
-    <video autoplay loop [muted]="muted" *ngIf="shown" #videoPlayer>
-      <source type="video/mp4" [src]="video">
-    </video>
+      <img
+        [src]="soundPicSrc"
+        class="sound"
+        alt="Sound Control"
+        title="Sound Control"
+        (click)="soundOnOff()"
+        *ngIf="shown"
+      />
+      <img
+        [src]="nextPicSrc"
+        class="next"
+        alt="Next background movie"
+        title="Next background movie"
+        (click)="setNextMovie()"
+        *ngIf="shown"
+      />
 
-    <img [src]="soundPicSrc" class="sound" alt="Sound Control" title="Sound Control" (click)="soundOnOff()" *ngIf="shown" />
-    <img [src]="nextPicSrc" class="next" alt="Next background movie" title="Next background movie" (click)="setNextMovie()" *ngIf="shown" />
+      <h1 *ngIf="!videoLoading">
+        <br />
+        <br />This is my online curriculum vitae
+        <br />
+        <br />in which <br />I introduce myself, <br />describe my professional
+        experience, and my studies.
+      </h1>
+    </div>
 
-    <h1>
-      <br/>
-      <br/>This is my online curriculum vitae
-      <br/>
-      <br/>in which
-      <br/>I introduce myself,
-      <br/>describe my professional experience, and my studies.
-    </h1>
-
+    <div *ngIf="videoLoading" class="progress">
+      <mat-spinner></mat-spinner>
+    </div>
   </mat-card-content>
 </mat-card>
-<br/>
-<br/>
+<br />
+<br />

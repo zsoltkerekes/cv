@@ -12,10 +12,11 @@ export class VideoComponent implements OnInit {
   nextPicSrc: string;
   videos: string[];
   video: string;
+  videoLoading: boolean;
   index: number;
   shown: boolean;
 
-  @ViewChild('videoPlayer', {static: false}) videoplayer: ElementRef;
+  @ViewChild("videoPlayer", { static: false }) videoplayer: ElementRef;
 
   constructor(private dataStorageService: DataStorageService) {}
 
@@ -26,14 +27,18 @@ export class VideoComponent implements OnInit {
     this.videos = this.dataStorageService.videoSrc();
     this.index = 0;
     this.video = this.videos[this.index];
+    this.videoLoading = false;
     window.addEventListener("resize", this.whenResized);
     this.whenResized();
   }
 
   setNextMovie() {
+    this.videoLoading = true;
     const max = this.videos.length - 1;
     this.index = this.index < max ? this.index + 1 : 0;
     this.video = this.videos[this.index];
+    this.videoplayer.nativeElement.oncanplay = () =>
+      (this.videoLoading = false);
     this.videoplayer.nativeElement.load();
   }
 
