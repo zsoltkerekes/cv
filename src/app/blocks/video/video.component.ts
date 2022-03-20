@@ -50,7 +50,7 @@ export class VideoComponent implements OnInit, AfterViewInit {
     const max = this.videos.length - 1;
     this.index = this.index < max ? this.index + 1 : 0;
     this.video = this.videos[this.index];
-    this.videoplayer.nativeElement.oncanplaythrough = () => {
+    this.videoplayer.nativeElement.oncanplay = () => {
       this.videoLoading = false;
     };
     this.videoplayer.nativeElement.load();
