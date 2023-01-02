@@ -9,42 +9,42 @@
     "image": "assets/images/lastpass.png",
     "name": "LastPass<br/><span class=\"smaller\">Software Developer</span>",
     "date": "2020 - 2022",
-    "description": "Working on a large-scale project with React, but also with core technologies, implementing features and fixing bugs on web app and also in browser extension. Started to get familiar with C# and .NET Core MVC."
+    "description": "Working on a large-scale project with React, but also with core technologies, implementing features and fixing bugs on web apps and also in browser extensions."
   },
   {
     "image": "assets/images/epam.png",
     "name": "Epam Systems<br/><span class=\"smaller\">Software Developer</span>",
     "date": "2018 - 2020",
-    "description": "Developing features, fixing bugs, maintain code quality on daily basis on an enterprise level project."
+    "description": "Developing features, fixing bugs, and maintaining code quality on daily basis on an enterprise-level project."
   },
   {
     "image": "assets/images/epam.png",
     "name": "Epam Systems<br/><span class=\"smaller\">Junior Software Developer</span>",
     "date": "2017 - 2018",
-    "description": "Learned and using new programming patterns and techniques, new technologies, programming SPA-s and PWA-s (Angular 2+, React), and Node.js, working with Git, Jira, Webstorm, etc. Also, daily use of the core technologies, like JavaScript (ES6), CSS and HTML. "
+    "description": "Learned and used new programming patterns and techniques, new technologies, programming SPA-s and PWA-s (Angular 2+, React), and Node.js, working with Git, Jira, Webstorm, etc. Also, daily use of core technologies, like JavaScript (ES6), CSS, and HTML."
   },
   {
     "image": "assets/images/litologo.png",
     "name": "Litofilm<br/><span class=\"smaller\">Web Developer</span>",
     "date": "2015 - 2017",
-    "description": "From scratch I developed web sites for over two years. We had a web designer who made the design by the wishes of the client, I hold together each project, contact the client, manage the work process, write the code (mostly client side), find a freelancer to write the back-end part of the code (if necessary), performed manual functional testing then finalize the deal with the client, when the product was ready."
+    "description": "From scratch, I developed web sites for over two years. We had a web designer who made the design by the wishes of the client, I held together each project, contact the client, manage the work process, write the code (mostly client side), find a freelancer to write the back-end part of the code (if necessary), performed manual functional testing then finalize the deal with the client when the product was ready."
   },
   {
     "image": "assets/images/telekom.png",
     "name": "Magyar Telekom<br/><span class=\"smaller\">Customer service representative</span>",
     "date": "2012 - 2015",
-    "description": "Supporting company sales and/or customer services efforts by solving clients problems, help to get answers, and manage conflicts. Later I involved in working with the receivables management team."
+    "description": "Supporting company sales and/or customer services efforts by solving clients' problems, helping to get answers, and managing conflicts. Later I was involved in working with the receivables management team."
   },
   {
     "image": "assets/images/lombard.png",
     "name": "Lombard Lízing<br/><span class=\"smaller\">Customer service representative</span>",
     "date": "2010 - 2012 ",
-    "description": "Supporting company sales and/or customer services efforts by taking cafe of the clients problems, help them with their issues with the contrats, give information when the clients needed."
+    "description": "Supporting company sales and/or customer services efforts by taking care of the client's problems, helping them with their issues with the contracts, give information when the clients needed."
   },
   {
     "image": "assets/images/otp.png",
     "name": "OTP Bank<br/><span class=\"smaller\">Customer service representative</span>",
     "date": "2009 - 2010",
-    "description": "Supporting company sales and/or customer services efforts by dealing with a breach of contract, accepting a payment agreement with non-paying customers, initiating a recovery if necessary."
+    "description": "Supporting company sales and/or customer services efforts by dealing with a breach of contract, accepting a payment agreement with non-paying customers, and initiating a recovery if necessary."
   }
 ]
