@@ -8,24 +8,8 @@
     "progress": 90
   },
   {
-    "name": "JQuery",
-    "progress": 50
-  },
-  {
-    "name": "PHP",
-    "progress": 15
-  },
-  {
-    "name": "SQL",
-    "progress": 10
-  },
-  {
     "name": "Static/Responsive site building",
     "progress": 85
-  },
-  {
-    "name": "English language",
-    "progress": 70
   },
   {
     "name": "Git",
@@ -106,13 +90,5 @@
   {
     "name": "TypeScript",
     "progress": 60
-  },
-  {
-    "name": "Websockets/Socket.io",
-    "progress": 45
-  },
-  {
-    "name": "C#",
-    "progress": 40
   }
 ]
