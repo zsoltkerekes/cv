@@ -2,8 +2,12 @@ version: '3.8'
 
 services:
   cv:
+    container_name: cv-angular
     build:
       dockerfile: dockerfile
       context: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
     ports:
-      - 80:80
+      - 4200:4200

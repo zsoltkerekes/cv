@@ -1,18 +1,13 @@
-# Stage 1
-
 FROM node:16.19 as node
 
 WORKDIR /app
 
-COPY . .
+COPY package.json .
 
 RUN npm install --force
 
-RUN npm run ng build
+COPY . .
 
+EXPOSE 4200
 
-# Stage 2
-
-FROM nginx
-
-COPY --from=node /app/dist /usr/share/nginx/html
+CMD [ "npm", "run", "start" ]
