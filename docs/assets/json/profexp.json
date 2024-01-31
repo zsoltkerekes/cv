@@ -1,25 +1,25 @@
 ﻿[
   {
     "image": "assets/images/lastpass.png",
-    "name": "LastPass<br/><span class=\"smaller\">Senior Software Developer</span>",
+    "name": "LastPass<br/><span class=\"smaller\">Senior Software Engineer</span>",
     "date": "2022 - present",
-    "description": "Gained some in-depth knowledge of the front-end side development, from vanilla js through frameworks. Learned more about working in a team, and how to push the product further, to help be better."
+    "description": "Gained some in-depth knowledge of the front-end side development, from vanilla js through frameworks. Learned more about working in a team, and how to push the product further, to help be better. Beyond technical experience, I've honed my team collaboration skills, understanding how collective efforts drive product enhancement and continual progression."
   },
   {
     "image": "assets/images/lastpass.png",
-    "name": "LastPass<br/><span class=\"smaller\">Software Developer</span>",
+    "name": "LastPass<br/><span class=\"smaller\">Software Engineer</span>",
     "date": "2020 - 2022",
-    "description": "Working on a large-scale project with React, but also with core technologies, implementing features and fixing bugs on web apps and also in browser extensions."
+    "description": "Engaged in a significant React-driven large-scale project, alongside fundamental technologies, contributing to feature implementation and bug resolution across web applications and browser extensions."
   },
   {
     "image": "assets/images/epam.png",
-    "name": "Epam Systems<br/><span class=\"smaller\">Software Developer</span>",
+    "name": "Epam Systems<br/><span class=\"smaller\">Software Engineer</span>",
     "date": "2018 - 2020",
-    "description": "Developing features, fixing bugs, and maintaining code quality on daily basis on an enterprise-level project."
+    "description": "Within an enterprise-level project, I demonstrated dedication to feature development, bug fixing, and upholding code quality on a daily basis. My involvement in a large-scale project equipped me with invaluable experience, allowing me to seamlessly blend core technologies with frameworks."
   },
   {
     "image": "assets/images/epam.png",
-    "name": "Epam Systems<br/><span class=\"smaller\">Junior Software Developer</span>",
+    "name": "Epam Systems<br/><span class=\"smaller\">Junior Software Engineer</span>",
     "date": "2017 - 2018",
     "description": "Learned and used new programming patterns and techniques, new technologies, programming SPA-s and PWA-s (Angular 2+, React), and Node.js, working with Git, Jira, Webstorm, etc. Also, daily use of core technologies, like JavaScript (ES6), CSS, and HTML."
   },
