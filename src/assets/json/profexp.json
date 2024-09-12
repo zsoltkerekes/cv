@@ -1,8 +1,14 @@
 ﻿[
   {
+    "image": "assets/images/byborg.png",
+    "name": "Byborg<br/><span class=\"smaller\">Staff Software Engineer</span>",
+    "date": "2024 - present",
+    "description": "Not only writing code and solving isolated problems, but if needed, working in cross team collaboration, drive initiatives, break down complex requirements into tasks and act as a technical bridge between business requirements and technical implementation, leading front-end development using React, TypeScript and Next.js - optimizing for server-side rendering, speed, and user experience."
+  },
+  {
     "image": "assets/images/lastpass.png",
     "name": "LastPass<br/><span class=\"smaller\">Senior Software Engineer</span>",
-    "date": "2022 - present",
+    "date": "2022 - 2024",
     "description": "Gained some in-depth knowledge of the front-end side development, from vanilla js through frameworks. Learned more about working in a team, and how to push the product further, to help be better. Beyond technical experience, I've honed my team collaboration skills, understanding how collective efforts drive product enhancement and continual progression."
   },
   {

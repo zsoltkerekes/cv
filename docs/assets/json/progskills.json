@@ -1,15 +1,7 @@
 [
   {
-    "name": "HTML/HTML5, CSS/CSS3",
-    "progress": 85
-  },
-  {
-    "name": "Javascript (ES5, ES6)",
+    "name": "Javascript (ES5, ES6) / TypeScript",
     "progress": 90
-  },
-  {
-    "name": "Static/Responsive site building",
-    "progress": 85
   },
   {
     "name": "Git",
@@ -20,20 +12,8 @@
     "progress": 75
   },
   {
-    "name": "AJAX",
-    "progress": 70
-  },
-  {
     "name": "Angular 2+",
     "progress": 65
-  },
-  {
-    "name": "Angular Material",
-    "progress": 55
-  },
-  {
-    "name": "Jasmine",
-    "progress": 50
   },
   {
     "name": "Jest",
@@ -41,7 +21,7 @@
   },
   {
     "name": "Redux",
-    "progress": 80
+    "progress": 70
   },
   {
     "name": "Webpack",
@@ -56,15 +36,7 @@
     "progress": 60
   },
   {
-    "name": "Karma",
-    "progress": 50
-  },
-  {
-    "name": "Crossbrowser Coding",
-    "progress": 75
-  },
-  {
-    "name": "Sass/Less",
+    "name": "Cross-browser Coding",
     "progress": 75
   },
   {
@@ -72,7 +44,11 @@
     "progress": 85
   },
   {
-    "name": "JIRA, Stash",
+    "name": "Next.js",
+    "progress": 80
+  },
+  {
+    "name": "JIRA",
     "progress": 75
   },
   {
@@ -86,9 +62,5 @@
   {
     "name": "Express.Js",
     "progress": 65
-  },
-  {
-    "name": "TypeScript",
-    "progress": 60
   }
 ]
